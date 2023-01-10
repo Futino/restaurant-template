@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta Data -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Files -->
+    <link data-trunk rel="copy-file" href="./manifest.webmanifest">
+    <link data-trunk rel="copy-file" href="./service_worker.js">
+
+    <!-- Directories -->
+    <link data-trunk rel="copy-dir" href="./images">
+
+    <!-- CSS -->
+    <link data-trunk rel="css" href="./output.css"/>
+
+    <!-- PWA -->
+    <link rel="manifest" href="./manifest.webmanifest">
+    <script>
+        // register ServiceWorker
+        window.onload = () => {
+            'use strict';
+
+            if ('serviceWorker' in navigator) {
+                navigator.serviceWorker
+                        .register('./service_worker.js');
+            }
+        }
+    </script>
+
+    <script>
+        // color theme
+        if (
+            localStorage.getItem('color-theme') === 'dark' ||
+        (!('color-theme' in localStorage) &&
+            window.matchMedia('(prefers-color-scheme: dark)').matches)
+        ) {
+            document.documentElement.classList.add('dark');
+        } else {
+            document.documentElement.classList.remove('dark');
+        }
+    </script>
+
+    <!-- Properties -->
+    <title>Futino</title>
+</head>
+<body class="bg-white dark:bg-black">
+</body>
+</html>
