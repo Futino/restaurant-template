@@ -9,11 +9,16 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        primary: colors.green,
-        secondary: colors.yellow,
-        accent: colors.emerald,
+        primary: colors.amber,
+        secondary: colors.teal,
+        accent: colors.pink,
+      },
+      fontFamily: {
+        sans: ['Graphik', 'sans-serif'],
+        serif: ['Merriweather', 'serif'],
       },
     },
+    
   },
   safelist: ["*"],
   plugins: [],

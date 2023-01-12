@@ -13,14 +13,9 @@ pub use label::Label;
 mod text_link;
 pub use text_link::TextLink;
 
-mod external_link_icon;
-pub use external_link_icon::ExternalLinkIcon;
-
-mod linkedin_icon;
-pub use linkedin_icon::LinkedinIcon;
-
-mod location_icon;
-pub use location_icon::LocationIcon;
-
-mod clock_icon;
-pub use clock_icon::ClockIcon;
+mod svg_icons;
+pub use svg_icons::ClockIcon;
+pub use svg_icons::ExternalLinkIcon;
+pub use svg_icons::LinkedinIcon;
+pub use svg_icons::LocationIcon;
+pub use svg_icons::MenuIcon;
