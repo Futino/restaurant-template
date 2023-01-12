@@ -11,15 +11,17 @@ pub fn Header(props: &Props) -> Html {
         <div class="sticky z-40 top-0 w-full backdrop-blur flex-none transition-colors duration-500 bg-black/5">
             // Top header
             <div class="py-3 border-b border-secondary-300/10 ">
-                <div class="xl:mx-1 lg:mx-2 md:mx-3 md:px-auto relative flex items-center">
+                <div class="xl:mx-1 lg:mx-2 md:mx-3 md:px-auto relative flex items-center text-sm">
 
                     // Left side
                     <a class="px-3 flex overflow-hidden" href="/">
                         <ul class="flex space-x-3">
-                            <p class="inline-flex text-white">
+                            <p class="inline-flex  text-white">
                                 <span><LocationIcon/></span>
                                 {"Mau Lam Building, G/F, 16 Mau Lam St"}
                                 </p>
+
+                                <SquareIcon />
 
                                 <p class="inline-flex text-white">
                                     <span><ClockIcon/></span>
@@ -38,11 +40,10 @@ pub fn Header(props: &Props) -> Html {
                                     <TextLink text="+1 123 456 7890" href="/" />
                                 </li>
                                 <li>
-                                    <TextLink text="template@restaurant.com" href="/contact" />
+                                <SquareIcon />
                                 </li>
-                                <li class="border-l border-secondary-300/10"/>
-                                <li class="hover:text-accent-400">
-                                    <ThemeButton />
+                                <li>
+                                    <TextLink text="template@restaurant.com" href="/contact" />
                                 </li>
                             </ul>
                         </nav>
