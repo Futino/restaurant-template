@@ -12,3 +12,6 @@ pub use client_review_card::ClientReviewCard;
 
 mod contact_form;
 pub use contact_form::ContactForm;
+
+mod side_nav;
+pub use side_nav::SideNav;
