@@ -27,7 +27,7 @@ impl Component for About {
               <p class="mt-6 text-lg text-white text-center max-w-3xl mx-auto">
                 {"Who are we? what are we about? "}
                 <a
-                  class="inline text-primary-400 hover:text-accent-400"
+                  class="inline text-primary-200 hover:text-accent-400"
                   href="#staff"
                 >
                   {"Lets find out!"}
@@ -40,7 +40,7 @@ impl Component for About {
           <div class="relative border-b border-secondary-500/40 shadow-2xl">
             <div class="my-40 mx-32">
               <h1 class="p-6 text-left font-bold text-3xl text-white">
-                <a class="font-black text-primary-700">{"Who"}</a>
+                <a class="font-black text-primary-200">{"Who"}</a>
                 {" we are."}
               </h1>
               <div id="staff" class="justify-items-center grid grid-cols-2 p-6">
@@ -82,7 +82,7 @@ impl Component for About {
           <div class="relative border-b border-secondary-500/40 shadow-2xl">
             <div class="my-32 mx-32">
               <h1 class="inline text-left font-bold text-3xl text-white">
-                <a class="font-black text-primary-700">{"What"}</a>
+                <a class="font-black text-primary-200">{"What"}</a>
                 {" we do."}
               </h1>
               <h1 class="text-left text-white font-normal text-xl max-w-2xl pt-6">
@@ -96,7 +96,7 @@ impl Component for About {
           <div class="relative border-b border-secondary-500/40 shadow-2xl">
             <div class="my-32 mx-32">
               <h1 class="inline text-left font-bold text-3xl text-white">
-                <a class="font-black text-primary-700">{"Why"}</a>
+                <a class="font-black text-primary-200">{"Why"}</a>
                 {" we do."}
               </h1>
               <h1 class="text-left text-white font-normal text-xl max-w-2xl pt-6">

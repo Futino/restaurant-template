@@ -57,14 +57,16 @@ pub fn Header(props: &Props) -> Html {
 
                     // Left part
                     <a class="px-3 flex overflow-hidden text-white" href="/">
-                        <MenuIcon />
+                        <button class="text-white bg-white-700 hover:bg-white-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-white-600 dark:hover:bg-white-700 focus:outline-none dark:focus:ring-white-800" type="button" data-drawer-target="drawer-example" data-drawer-show="drawer-example" aria-controls="drawer-example">
+                            <MenuIcon />
+                            </button>
                     </a>
 
                     {for props.children.iter()}
 
                     // Right part
                     <div class="flex items-center ml-auto">
-                    <button type="button" class="text-black hover:text-white dark:border-primary-200 bg-primary-200 hover:bg-accent-300 focus:ring-4 focus:outline-none focus:ring-primary-200 font-medium text-base px-6 py-3.5 text-center dark:bg-primary-200 dark:hover:bg-black dark:focus:ring-primary-400">
+                    <button type="button" class="text-black hover:text-white dark:border-primary-200 bg-primary-200 hover:bg-accent-300 focus:ring-4 focus:outline-none focus:ring-primary-200 font-medium text-base px-6 py-3.5 text-center dark:bg-primary-200 dark:hover:bg-black dark:focus:ring-primary-200">
                     {"FIND A TABLE"}
                     </button>
                     </div>
