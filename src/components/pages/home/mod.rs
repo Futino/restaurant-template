@@ -15,8 +15,11 @@ impl Component for Home {
     fn view(&self, _ctx: &Context<Self>) -> Html {
         html! {
         <main>
-        <div class="bg-cover bg-top bg-local bg-[url('/images/curry.jpg')]">
-        <div class="max-w-3xl mx-auto text-center py-36">
+        <div class="bg-black w-full relative flex flex-col items-center justify-center">
+            <div class="h-full bg-black opacity-40">
+                <img src="/images/curry.jpg" class="relative h-full bg-cover" alt="Tailwind Play" />
+              </div>
+        <div class="max-w-3xl mx-auto items-center text-center px-4 py-36 absolute ">
             <h4 class="text-lg font-light text-primary-600 p-6">
                 {
                     "DELIGHTFUL EXPERIENCE"
