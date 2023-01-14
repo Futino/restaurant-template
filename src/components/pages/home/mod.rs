@@ -32,10 +32,15 @@ impl Component for Home {
                 <h3 class="text-xl font-based text-white p-2">
                     {"Come with family & feel the joy of mouthwatering food"}
                 </h3>
-                <button type="button" class="text-primary-200 border-4 dark:border-primary-200 bg-transparent focus:ring-2 focus:outline-none font-medium text-base px-6 py-3.5 dark:bg-transparent dark:hover:bg-primary-200 dark:hover:text-black">
+                <div class="grid grid-cols-2 gap-x-4 p-4 max-w-xl justify-center items-center">
+                <a href="/Menu" class="text-primary-200 border-4 dark:border-primary-200 bg-transparent focus:ring-2 focus:outline-none font-medium text-base px-6 py-3.5 dark:bg-transparent dark:hover:bg-primary-200 dark:hover:text-black">
                     {"View our Menu"}
-                </button>
-            </div> 
+                </a>
+                <a href="/Contact" class="text-black hover:text-white dark:border-primary-200 bg-primary-200 hover:bg-accent-300 focus:ring-4 focus:outline-none focus:ring-primary-200 font-medium text-base px-6 py-3.5 text-center dark:bg-primary-200 dark:hover:bg-black dark:focus:ring-primary-200">
+                    {"FIND A TABLE"}
+                    </a>
+                    </div>
+            </div>
 
         </div>
         </div>

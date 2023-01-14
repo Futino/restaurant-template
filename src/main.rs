@@ -8,9 +8,11 @@ use components::*;
 enum Route {
     #[at("/")]
     Home,
-    #[at("/about")]
+    #[at("/Menu")]
+    Menu,
+    #[at("/About")]
     About,
-    #[at("/contact")]
+    #[at("/Contact")]
     Contact,
     #[not_found]
     #[at("/404")]
@@ -33,6 +35,7 @@ fn not_found() -> Html {
 fn switch(routes: Route) -> Html {
     match routes {
         Route::Home => html! {<Home/> },
+        Route::Menu => html! { <Menu/> },
         Route::About => html! { <About/> },
         Route::Contact => html! { <Contact/> },
         Route::NotFound => html! {

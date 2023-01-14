@@ -6,3 +6,6 @@ pub use about::About;
 
 mod contact;
 pub use contact::Contact;
+
+mod menu;
+pub use menu::Menu;
