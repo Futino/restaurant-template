@@ -15,7 +15,8 @@ pub fn MenuItem(props: &Props) -> Html {
 
     let cost = format!("${:.2}", cost);
     html! {
-            <div class="flex flex-row">
+        <div class="pb-6">
+            <div class="flex flex-row pb-2">
             <h1 class="text-white text-lg pr-4">
                 {name}
             </h1>
@@ -24,10 +25,11 @@ pub fn MenuItem(props: &Props) -> Html {
             <h1 class="text-primary-200 text-xl pl-4">
                 {cost}
             </h1>
-
+            </div>
         <h2 class="text-gray-400 text-base font-light">
             {ingredients}
         </h2>
+
     </div>
         }
 }

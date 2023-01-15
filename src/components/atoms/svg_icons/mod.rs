@@ -46,3 +46,22 @@ pub fn SquareIcon() -> Html {
         <svg fill="currentColor" width="12px" height="12px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" transform="rotate(45)"><g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g><g id="SVGRepo_iconCarrier"><path d="M1.25 1.25v29.5h29.5v-29.5zM29.25 29.25h-26.5v-26.5h26.5z"></path> </g></svg>
     }
 }
+
+#[function_component]
+pub fn SeperatorIcon() -> Html {
+    html! {
+
+            <svg width="110" height="70" x="0px" y="0px" viewBox="0 0 97.1 12.7" enable-background="new 0 0 97.1 12.7" space="preserve">
+                <rect x="31.6" y="3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 14.7528 -22.8645)" fill="none" stroke="#E3C48E" stroke-width="0.75" stroke-miterlimit="10" width="6.8" height="6.8"/>
+                <rect x="58.7" y="3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 22.699 -42.0484)" fill="none" stroke="#E3C48E" stroke-width="0.75" stroke-miterlimit="10" width="6.8" height="6.8"/>
+                <polygon fill="none" stroke="#E3C48E" stroke-width="0.75" stroke-miterlimit="10" points="48.6,12.1 39.8,6.4 48.6,0.6 57.3,6.4 
+                    "/>
+                <line fill="none" stroke="#E3C48E" stroke-width="0.75" stroke-miterlimit="10" x1="3.2" y1="6.4" x2="30.2" y2="6.4"/>
+                <circle fill="#E3C48E" cx="2.6" cy="6.4" r="2.5"/>
+                <line fill="none" stroke="#E3C48E" stroke-width="0.75" stroke-miterlimit="10" x1="93.9" y1="6.4" x2="66.9" y2="6.4"/>
+                <circle fill="#E3C48E" cx="94.4" cy="6.4" r="2.5"/>
+            </svg>
+        
+
+    }
+}

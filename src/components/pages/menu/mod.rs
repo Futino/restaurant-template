@@ -36,22 +36,77 @@ impl Component for Menu {
         </div>
 
         <div class="bg-stone-800 relative justify-center w-full">
-            <div class="text-center">
-                <h4 class="text-sm font-light text-primary-200 p-6">
-                    {
-                        "STARTER MENU"
-                    }
-                </h4>
-                <h1 class=" text-6xl font-normal text-white p-6">
-                    {"Appetizers"}
-                </h1>
-            </div>
-            <div class="flex flex-row max-w-5xl mx-auto">
-                <img src="images/chicken_rice.jpg" class="object-contain h-96 p-8"/>
-                <div class="max-w-2xl p-8 text-left">
-                    <MenuItem name="Greek Salad" ingredients="Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese." cost=25.50 />
+            <div class="max-w-7xl mx-auto p-8 pb-12">
+                <div class="text-center place-items-center">
+                    <h4 class="text-sm font-light text-primary-200 p-4">
+                        {
+                            "STARTER MENU"
+                        }
+                    </h4>
+                    <SeperatorIcon />
+                    <h1 class=" text-6xl font-normal text-white p-6">
+                        {"Appetizers"}
+                    </h1>
+                </div>
+                <div class="grid grid-cols-3 ">
+                    <img src="images/chicken_rice.jpg" class="col-span-2 object-contain p-6"/>
+                    <div class="col-span-1 p-6 justify-items-between place-content-between text-left">
+                        <MenuItem name="Greek Salad" ingredients="Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese." cost=25.00 />
+                        <MenuItem name="Lasagne" ingredients="Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices." cost=40.50 />
+                        <MenuItem name="Tokusen Wagyu" ingredients="Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices." cost=150.50 />
+                        <MenuItem name="Butternut Pumpkin" ingredients="Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand." cost=10.20 />
                     </div>
+                </div>
             </div>
+            <div class="max-w-7xl mx-auto p-8 pb-12">
+                <div class="text-center items-center">
+                    <h4 class="text-sm font-light text-primary-200 p-6">
+                        {
+                            "DELICIOUS"
+                        }
+                    </h4>
+                    <SeperatorIcon />
+                    <h1 class=" text-6xl font-normal text-white p-6">
+                        {"Main Dishes"}
+                    </h1>
+                </div>
+                <div class="grid grid-cols-3 max-w-6xl mx-auto">
+                    <div class="col-span-1 p-6 justify-items-between place-content-between text-left">
+                        <MenuItem name="Greek Salad" ingredients="Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese." cost=25.00 />
+                        <MenuItem name="Lasagne" ingredients="Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices." cost=40.50 />
+                        <MenuItem name="Tokusen Wagyu" ingredients="Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices." cost=150.50 />
+                        <MenuItem name="Butternut Pumpkin" ingredients="Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand." cost=10.20 />
+                    </div>
+                    <img src="images/chicken_rice.jpg" class="col-span-2 object-contain p-6"/>
+                </div>
+            </div>
+
+            
+
+            <div class="max-w-7xl mx-auto p-8 pb-12">
+                <div class="text-center">
+                    <h4 class="text-sm font-light text-primary-200 p-6">
+                        {
+                            "SWEET & SWEET"
+                        }
+                    </h4>
+                    <SeperatorIcon />
+                    <h1 class=" text-6xl font-normal text-white p-6">
+                        {"Desserts"}
+                    </h1>
+                </div>
+                <div class="grid grid-cols-3 max-w-6xl mx-auto">
+                    <div class="col-span-1 p-6 justify-items-between place-content-between text-left">
+                        <MenuItem name="Greek Salad" ingredients="Tomatoes, green bell pepper, sliced cucumber onion, olives, and feta cheese." cost=25.00 />
+                        <MenuItem name="Lasagne" ingredients="Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices." cost=40.50 />
+                        <MenuItem name="Tokusen Wagyu" ingredients="Vegetables, cheeses, ground meats, tomato sauce, seasonings and spices." cost=150.50 />
+                        <MenuItem name="Butternut Pumpkin" ingredients="Typesetting industry lorem Lorem Ipsum is simply dummy text of the priand." cost=10.20 />
+                    </div>
+                    <img src="images/chicken_rice.jpg" class="col-span-2 object-contain p-6"/>
+                </div>
+            </div>
+
+            
         </div>
 
         </main>
