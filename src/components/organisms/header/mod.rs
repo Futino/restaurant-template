@@ -12,19 +12,19 @@ pub fn Header(props: &Props) -> Html {
 
             // Top header
             <div class="py-3 border-b border-secondary-300/10 ">
-                <div class="xl:mx-1 lg:mx-2 md:mx-3 md:px-auto relative flex items-center text-sm">
+                <div class="xl:mx-1 lg:mx-2 md:mx-3 md:px-auto relative flex items-center text-sm text-white">
 
                     // Left side
                     <a class="px-3 flex overflow-hidden" href="/">
-                        <ul class="flex space-x-3">
-                            <p class="inline-flex  text-white">
+                        <ul class="flex space-x-3 items-center">
+                            <p class="inline-flex">
                                 <span><LocationIcon/></span>
                                 {"Mau Lam Building, G/F, 16 Mau Lam St"}
                                 </p>
 
                                 <SquareIcon />
 
-                                <p class="inline-flex text-white">
+                                <p class="inline-flex">
                                     <span><ClockIcon/></span>
                                     {"Daily : 8.00 am to 10.00 pm"}
                                     </p>
@@ -35,16 +35,16 @@ pub fn Header(props: &Props) -> Html {
 
                     // Right side
                     <div class="flex items-center ml-auto ">
-                        <nav class="text-sm leading-6 font-semibold text-white">
-                            <ul class="px-3 flex space-x-8 text-white">
+                        <nav>
+                            <ul class="px-3 flex space-x-8 items-center">
                                 <li>
-                                    <TextLink text="+1 123 456 7890" href="/" />
+                                    {"+1 123 456 7890"}
                                 </li>
                                 <li>
                                 <SquareIcon />
                                 </li>
                                 <li>
-                                    <TextLink text="template@restaurant.com" href="/contact" />
+                                    {"template@restaurant.com"}
                                 </li>
                             </ul>
                         </nav>

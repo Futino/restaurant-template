@@ -37,7 +37,7 @@ impl Component for Menu {
 
         <div class="bg-stone-800 relative justify-center w-full">
             <div class="max-w-7xl mx-auto p-8 pb-12">
-                <div class="text-center place-items-center">
+                <div class="text-center justify-center">
                     <h4 class="text-sm font-light text-primary-200 p-4">
                         {
                             "STARTER MENU"
