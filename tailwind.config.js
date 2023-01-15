@@ -17,6 +17,9 @@ module.exports = {
         sans: ['Graphik', 'sans-serif'],
         serif: ['Merriweather', 'serif'],
       },
+      borderWidth: {
+        '1': '1px'
+      }
     },
     
   },
