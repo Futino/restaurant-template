@@ -60,7 +60,7 @@ impl Component for Menu {
             </div>
             <div class="max-w-7xl mx-auto p-8 pb-12">
                 <div class="text-center items-center">
-                    <h4 class="text-sm font-light text-primary-200 p-6">
+                    <h4 class="text-sm font-light text-primary-200 p-4">
                         {
                             "DELICIOUS"
                         }
@@ -85,7 +85,7 @@ impl Component for Menu {
 
             <div class="max-w-7xl mx-auto p-8 pb-12">
                 <div class="text-center">
-                    <h4 class="text-sm font-light text-primary-200 p-6">
+                    <h4 class="text-sm font-light text-primary-200 p-4">
                         {
                             "SWEET & SWEET"
                         }

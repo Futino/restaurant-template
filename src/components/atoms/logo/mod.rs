@@ -18,7 +18,7 @@ pub fn Logo(props: &Props) -> Html {
         }
     } else if props.style == "labeled" {
         html! {
-            <div class="flex justify-center gap-5">
+            <div class="flex justify-center gap-5 items-center">
                 <Logo style="circle"/>
                 <Label>
                     <p class="pt-0.5 font-bold text-xl invisible sm:visible">

@@ -57,15 +57,15 @@ pub fn Header(props: &Props) -> Html {
                 <div class="mx-auto xl:mx-3 lg:4 md:mx-5 relative flex items-center">
 
                     // Left part
-                        <button class="text-white bg-white-700 hover:bg-white-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-white-600 dark:hover:bg-primary-300 focus:outline-none dark:focus:ring-white-800" type="button" data-drawer-target="side-nav" data-drawer-show="side-nav" aria-controls="side-nav">
-                            <MenuIcon />
-                            </button>
+                        <Logo style="labeled"/>
 
                     {for props.children.iter()}
 
                     // Right part
                     <div class="flex items-center ml-auto">
-
+                        <button class="text-white bg-white-700 hover:bg-white-800 focus:ring-4 focus:ring-white-300 font-medium rounded-lg text-sm px-5 py-2.5 mr-2 mb-2 dark:bg-white-600 dark:hover:bg-primary-300 focus:outline-none dark:focus:ring-white-800" type="button" data-drawer-target="side-nav" data-drawer-show="side-nav" aria-controls="side-nav">
+                            <MenuIcon />
+                            </button>
                     </div>
                 </div>
 
