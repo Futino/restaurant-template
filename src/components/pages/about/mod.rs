@@ -17,32 +17,32 @@ impl Component for About {
           // Top section
           <div
             class="py-40 px-4 sm:px-6 md:px-8 border-b border-secondary-500/40 shadow-2xl">
-            <div class="relative max-w-5xl mx-auto">
-              <h1
-                class="font-extrabold text-4xl sm:text-5xl lg:text-6xl tracking-tight text-center text-white"
-              >
+            <div class="relative max-w-5xl mx-auto text-center">
+              <h4 class="text-base font-light text-primary-200 p-4">
+                {
+                    "Our Story"
+                }
+            </h4>
+            <SeperatorIcon />
+            <h1 class=" text-5xl font-normal text-white p-6">
                 {"About Us"}
-              </h1>
-
-              <p class="mt-6 text-lg text-white text-center max-w-3xl mx-auto">
-                {"Who are we? what are we about? "}
-                <a
-                  class="inline text-primary-200 hover:text-accent-400"
-                  href="#staff"
-                >
-                  {"Lets find out!"}
-                </a>
-              </p>
+            </h1>
             </div>
           </div>
 
           // Staff section
           <div class="relative border-b border-secondary-500/40 shadow-2xl">
-            <div class="my-40 mx-32">
-              <h1 class="p-6 text-left font-bold text-3xl text-white">
-                <a class="font-black text-primary-200">{"Who"}</a>
-                {" we are."}
+            <div class="my-40 mx-32 text-center">
+              <h1 class="p-6 font-bold text-xl text-primary-200">
+                {"WHO WE ARE."}
               </h1>
+              <p class="text-">
+                {"A modern restaurant with a menu that will make your mouth water. 
+                Servicing delicious food since 45 years. Enjoy our seasonal menu and
+                 experience the beauty of naturalness"}
+              </p>
+            </div>
+            <div>
               <div id="staff" class="justify-items-center grid grid-cols-2 p-6">
                 <StaffCard name="Jonas Lewis"
                         title="Lead Developer, Co-Founder, & Co-Owner" >

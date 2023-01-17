@@ -93,8 +93,8 @@ impl Component for Home {
         </div>
 
         // About section
-        <div class="bg-stone-900 justify-center">
-            <div class="my-20 mx-20 grid grid-cols-2 gap-x-3 ">
+        <div class="bg-stone-900">
+            <div class="my-20 mx-20 grid grid-cols-2 gap-x-3 items-center justify-center">
                 <div class="p-8 text-center max-w-lg">
                     <h4 class="text-base font-light text-primary-200 p-4">
                         {
@@ -105,7 +105,7 @@ impl Component for Home {
                     <h1 class=" text-5xl font-normal text-white p-6">
                         {"We Offer Top Notch"}
                     </h1>
-                    <p class="text-white text-base leading-6 font-light">
+                    <p class="text-white text-base leading-6 font-light p-4">
                         {
                             "Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has 
                             been the industrys standard dummy text ever since the when an unknown printer took a galley
