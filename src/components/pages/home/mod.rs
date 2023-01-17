@@ -17,12 +17,12 @@ impl Component for Home {
         <main>
         
         // Top section
-        <div class="bg-black w-full flex flex-col justify-center">
-                <div class="h-full bg-black opacity-40">
-                    <img src="/images/curry.jpg" class="h-full bg-cover" alt="Tailwind Play" />
-                </div>
-            <div class="max-w-3xl mx-auto text-center px-4 py-36 flex justify-center absolute">
-                <div class="">
+        <div class="bg-black w-full relative flex flex-col items-center justify-center">
+            <div class="h-full bg-black opacity-40">
+                <img src="/images/curry.jpg" class="h-full bg-cover" alt="Tailwind Play" />
+              </div>
+              <div class="max-w-3xl mx-auto items-center px-4 py-36 flex justify-between absolute">
+                <div class="text-center">
                     <h4 class="text-lg font-light text-primary-200 p-6">
                         {
                             "DELIGHTFUL EXPERIENCE"
@@ -48,7 +48,7 @@ impl Component for Home {
         </div>
 
         // Various Menus Options
-        <div class="bg-black justify-center my-20 mx-40">
+        <div class="bg-black justify-center py-20 mx-40">
             <div class="max-w-md mx-auto p-8 pb-12 text-center ">
                     <h4 class="text-sm font-light text-primary-200 p-4">
                         {
@@ -67,22 +67,22 @@ impl Component for Home {
                     </p>
                     
                 </div>
-                <div class="grid grid-cols-3 gap-x-8 text-center ">
-                    <div class="">
+                <div class="grid grid-cols-3 gap-x-8 text-center p-6">
+                    <div class="p-6 pt-4">
                         <img src="/images/pancakes.jpeg" class="object-cover w-fit h-full " alt="" />
                         <h1 class="text-white text-3xl p-6"> 
                             {"Breakfast"}
                         </h1>
                         <TextLink text="VIEW MENU" href="/Menu"/>
                     </div>
-                    <div class="">
+                    <div class="p-6">
                         <img src="/images/pancakes.jpeg" class="object-cover w-fit h-full " alt="" />
                         <h1 class="text-white text-3xl p-6"> 
                             {"Desserts"}
                         </h1>
                         <TextLink text="VIEW MENU" href="/Menu"/>
                     </div>
-                    <div class="p-4">
+                    <div class="p-6 pt-4">
                         <img src="/images/pancakes.jpeg" class="object-cover w-fit h-full " alt="" />
                         <h1 class="text-white text-3xl p-6"> 
                             {"Drinks"}
@@ -93,29 +93,34 @@ impl Component for Home {
         </div>
 
         // About section
-        <div class="bg-stone-800 grid grid-cols-2 justify-center max-w-3xl mx-auto">
-            <div class="p-8 text-center ">
-                <h4 class="text-sm font-light text-primary-200 p-4">
-                    {
-                        "Our Story"
-                    }
-                </h4>
-                <SeperatorIcon />
-                <h1 class=" text-5xl font-normal text-white p-6">
-                    {"We Offer Top Notch"}
-                </h1>
-                <p class="text-white text-sm leading-6 font-light">
-                    {
-                        "Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has 
-                        been the industrys standard dummy text ever since the when an unknown printer took a galley
-                        of type and scrambled it to make a type specimen book It has survived not only five centuries,
-                        but also the leap into.
-                        "
-                    }
-                </p>
-                
+        <div class="bg-stone-900 justify-center">
+            <div class="my-20 mx-20 grid grid-cols-2 gap-x-3 ">
+                <div class="p-8 text-center max-w-lg">
+                    <h4 class="text-base font-light text-primary-200 p-4">
+                        {
+                            "Our Story"
+                        }
+                    </h4>
+                    <SeperatorIcon />
+                    <h1 class=" text-5xl font-normal text-white p-6">
+                        {"We Offer Top Notch"}
+                    </h1>
+                    <p class="text-white text-base leading-6 font-light">
+                        {
+                            "Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has 
+                            been the industrys standard dummy text ever since the when an unknown printer took a galley
+                            of type and scrambled it to make a type specimen book It has survived not only five centuries,
+                            but also the leap into.
+                            "
+                        }
+                    </p>
+                    <a href="/About" class="text-primary-200 border-4 dark:border-primary-200 bg-transparent focus:ring-2 focus:outline-none font-medium text-base px-6 py-3.5 dark:bg-transparent dark:hover:bg-primary-200 dark:hover:text-black">
+                        {"READ MORE"}
+                        </a>
+                </div>
+                <img src="/images/interior.jpeg" class="object-cover w-auto p-8"/>
             </div>
-            <img src="/images/interior.jpeg"/>
+            
         </div>
         </main>
 
