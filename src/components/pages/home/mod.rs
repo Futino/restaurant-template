@@ -23,7 +23,7 @@ impl Component for Home {
               </div>
               <div class="max-w-3xl mx-auto items-center px-4 py-36 flex justify-between absolute">
                 <div class="text-center">
-                    <h4 class="text-lg font-light text-primary-200 p-6">
+                    <h4 class="text-lg font-light text-tertiary-on- p-6">
                         {
                             "DELIGHTFUL EXPERIENCE"
                         }
