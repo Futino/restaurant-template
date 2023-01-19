@@ -28,6 +28,12 @@ module.exports = {
               dark: "rgba(var(--md-sys-color-on-primary-container-dark) / <alpha-value>)",
             },
           },
+          inverse:
+          {
+            light:
+              "rgba(var(--md-sys-color-inverse-primary-light) / <alpha-value>)",
+            dark: "rgba(var(--md-sys-color-on-primary-container-dark) / <alpha-value>)",
+          }
         },
 
         // Secondary tones
@@ -70,13 +76,17 @@ module.exports = {
           },
         },
 
-        // Neutral tones
+        // Neutral tones (md3 names them as 'surface')
         neutral: {
           light: "rgba(var(--md-sys-color-surface-light) / <alpha-value>)",
-          dark: "rgba(var(--md-sys-color-neutral-dark) / <alpha-value>)",
+          dark: "rgba(var(--md-sys-color-surface-dark) / <alpha-value>)",
           on: {
-            light: "rgba(var(--md-sys-color-on-neutral-light) / <alpha-value>)",
-            dark: "rgba(var(--md-sys-color-on-neutral-dark) / <alpha-value>)",
+            inverse: {
+              light: "rgba(var(--md-sys-color-inverse-on-surface-light) / <alpha-value>)",
+              dark: "rgba(var(--md-sys-color-inverse-on-surface-dark) / <alpha-value>)",
+            },
+            light: "rgba(var(--md-sys-color-on-surface-light) / <alpha-value>)",
+            dark: "rgba(var(--md-sys-color-on-surface-dark) / <alpha-value>)",
           },
           container: {
             light:
@@ -88,11 +98,8 @@ module.exports = {
               dark: "rgba(var(--md-sys-color-on-neutral-container-dark) / <alpha-value>)",
             },
           },
-        },
-
-        // Neutral-Variant tones
-        neutral: {
-          variant: 
+          // Neutral variant tones
+          variant:
           {
             light: "rgba(var(--md-sys-color-neutral-light) / <alpha-value>)",
             dark: "rgba(var(--md-sys-color-neutral-dark) / <alpha-value>)",
@@ -102,16 +109,18 @@ module.exports = {
             },
             container: {
               light:
-                "rgba(var(--md-sys-color-neutral-container-light) / <alpha-value>)",
-              dark: "rgba(var(--md-sys-color-neutral-container-dark) / <alpha-value>)",
+                "rgba(var(--md-sys-color-surface-variant-light) / <alpha-value>)",
+              dark: "rgba(var(--md-sys-color-surface-variant-dark) / <alpha-value>)",
               on: {
                 light:
-                  "rgba(var(--md-sys-color-on-neutral-container-light) / <alpha-value>)",
-                dark: "rgba(var(--md-sys-color-on-neutral-container-dark) / <alpha-value>)",
+                  "rgba(var(--md-sys-color-on-surface-variant-light) / <alpha-value>)",
+                dark: "rgba(var(--md-sys-color-on-surface-variant-dark) / <alpha-value>)",
               },
             },
           }
         },
+
+        // Back
       },
       fontFamily: {
         sans: ["Graphik", "sans-serif"],
