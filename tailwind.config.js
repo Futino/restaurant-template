@@ -1,8 +1,5 @@
 /** @type {import('tailwindcss').Config} */
 
-// tailwind.config.js
-const colors = require("tailwindcss/colors");
-
 module.exports = {
   content: ["./index.html", "./src/**/*.{html,js,rs}"],
   darkMode: "class",
@@ -120,6 +117,18 @@ module.exports = {
           }
         },
 
+        // Background tones
+        background: {
+          light:
+            "var(--md-color-background-light) ",
+          dark: "var(--md-color-background-dark) ",
+          on: {
+            light:
+              "var(--md-color-on-background-light) ",
+            dark: "var(--md-color-on-background-dark) ",
+          },
+        },
+
         // On Error tones
         error:{
           light:
@@ -141,9 +150,6 @@ module.exports = {
           },
         },
         },
-      
-
-        // Back
       },
       fontFamily: {
         sans: ["Graphik", "sans-serif"],

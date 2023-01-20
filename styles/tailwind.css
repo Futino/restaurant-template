@@ -72,7 +72,14 @@
 }
 
 @layer components {
-    .text-primary-class {
-        @apply text-primary-light dark:text-primary-dark;
+
+
+    .text-primary{
+        @apply text-tertiary-light dark:text-tertiary-dark;
     }
+
+
+    
+
+    
 }
