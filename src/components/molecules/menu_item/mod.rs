@@ -17,16 +17,16 @@ pub fn MenuItem(props: &Props) -> Html {
     html! {
         <div class="pb-6">
             <div class="flex flex-row pb-2">
-            <h1 class="text-white text-lg pr-4">
+            <h1 class="pr-4 text-lg text-white">
                 {name}
             </h1>
-            <div class="self-center grow inline-flex h-2 border-gray-500 border-t-1 border-b-1">
+            <div class="inline-flex self-center h-2 border-gray-500 grow border-t-1 border-b-1">
             </div>
-            <h1 class="text-primary-200 text-xl pl-4">
+            <h1 class="pl-4 text-xl text-primary-200">
                 {cost}
             </h1>
             </div>
-        <h2 class="text-gray-400 text-base font-light">
+        <h2 class="text-base font-light text-gray-400">
             {ingredients}
         </h2>
 

@@ -17,28 +17,28 @@ impl Component for Home {
         <main>
         
         // Top section
-        <div class="bg-black w-full relative flex flex-col items-center justify-center">
+        <div class="flex relative flex-col justify-center items-center w-full bg-black">
             <div class="h-full bg-black opacity-40">
                 <img src="/images/curry.jpg" class="h-full bg-cover" alt="Tailwind Play" />
               </div>
-              <div class="max-w-3xl mx-auto items-center px-4 py-36 flex justify-between absolute">
+              <div class="flex absolute justify-between items-center py-36 px-4 mx-auto max-w-3xl">
                 <div class="text-center">
-                    <h4 class="text-lg font-light text-tertiary-on- p-6">
+                    <h4 class="p-6 text-lg font-light text-primary-class">
                         {
                             "DELIGHTFUL EXPERIENCE"
                         }
                     </h4>
-                    <h1 class=" text-8xl font-normal text-white p-6">
+                    <h1 class="p-6 text-8xl font-normal text-primary-on-light">
                         {"Flavors Inspired by the Seasons"}
                     </h1>
-                    <h3 class="text-xl font-based text-white p-2">
+                    <h3 class="p-2 text-xl text-white font-based">
                         {"Come with family & feel the joy of mouthwatering food"}
                     </h3>
-                    <div class="grid grid-cols-2 gap-x-4 p-4 max-w-md mx-auto">
-                    <a href="/Menu" class="text-primary-200 border-4 dark:border-primary-200 bg-transparent focus:ring-2 focus:outline-none font-medium text-base px-6 py-3.5 dark:bg-transparent dark:hover:bg-primary-200 dark:hover:text-black">
+                    <div class="grid grid-cols-2 gap-x-4 p-4 mx-auto max-w-md">
+                    <a href="/Menu" class="py-3.5 px-6 text-base font-medium bg-transparent border-4 dark:bg-transparent focus:ring-2 focus:outline-none text-primary-200 dark:border-primary-200 dark:hover:bg-primary-200 dark:hover:text-black">
                         {"View our Menu"}
                     </a>
-                    <a href="/Contact" class="text-primary-200 border-4 dark:border-primary-200 bg-transparent focus:ring-2 focus:outline-none font-medium text-base px-6 py-3.5 dark:bg-transparent dark:hover:bg-primary-200 dark:hover:text-black">
+                    <a href="/Contact" class="py-3.5 px-6 text-base font-medium bg-transparent border-4 dark:bg-transparent focus:ring-2 focus:outline-none text-primary-200 dark:border-primary-200 dark:hover:bg-primary-200 dark:hover:text-black">
                         {"FIND A TABLE"}
                         </a>
                         </div>
@@ -48,18 +48,18 @@ impl Component for Home {
         </div>
 
         // Various Menus Options
-        <div class="bg-black justify-center py-20 mx-40">
-            <div class="max-w-md mx-auto p-8 pb-12 text-center ">
-                    <h4 class="text-sm font-light text-primary-200 p-4">
+        <div class="justify-center py-20 mx-40 bg-black">
+            <div class="p-8 pb-12 mx-auto max-w-md text-center">
+                    <h4 class="p-4 text-sm font-light text-primary-200">
                         {
                             "FLAVOURS FOR ROYALTY"
                         }
                     </h4>
                     <SeperatorIcon />
-                    <h1 class=" text-5xl font-normal text-white p-6">
+                    <h1 class="p-6 text-5xl font-normal text-white">
                         {"We Offer Top Notch"}
                     </h1>
-                    <p class="text-white text-sm leading-6 font-light">
+                    <p class="text-sm font-light leading-6 text-white">
                         {
                             "Lorem Ipsum is simply dummy text of the printing and typesetting 
                             industry lorem Ipsum has been the industrys standard dummy text ever."
@@ -67,24 +67,24 @@ impl Component for Home {
                     </p>
                     
                 </div>
-                <div class="grid grid-cols-3 gap-x-8 text-center p-6">
+                <div class="grid grid-cols-3 gap-x-8 p-6 text-center">
                     <div class="p-6 pt-4">
-                        <img src="/images/pancakes.jpeg" class="object-cover w-fit h-full " alt="" />
-                        <h1 class="text-white text-3xl p-6"> 
+                        <img src="/images/pancakes.jpeg" class="object-cover h-full w-fit" alt="" />
+                        <h1 class="p-6 text-3xl text-white"> 
                             {"Breakfast"}
                         </h1>
                         <TextLink text="VIEW MENU" href="/Menu"/>
                     </div>
                     <div class="p-6">
-                        <img src="/images/pancakes.jpeg" class="object-cover w-fit h-full " alt="" />
-                        <h1 class="text-white text-3xl p-6"> 
+                        <img src="/images/pancakes.jpeg" class="object-cover h-full w-fit" alt="" />
+                        <h1 class="p-6 text-3xl text-white"> 
                             {"Desserts"}
                         </h1>
                         <TextLink text="VIEW MENU" href="/Menu"/>
                     </div>
                     <div class="p-6 pt-4">
-                        <img src="/images/pancakes.jpeg" class="object-cover w-fit h-full " alt="" />
-                        <h1 class="text-white text-3xl p-6"> 
+                        <img src="/images/pancakes.jpeg" class="object-cover h-full w-fit" alt="" />
+                        <h1 class="p-6 text-3xl text-white"> 
                             {"Drinks"}
                         </h1>
                         <TextLink text="VIEW MENU" href="/Menu"/>
@@ -94,18 +94,18 @@ impl Component for Home {
 
         // About section
         <div class="bg-stone-900">
-            <div class="my-20 mx-20 grid grid-cols-2 gap-x-3 items-center justify-center">
-                <div class="p-8 text-center max-w-lg">
-                    <h4 class="text-base font-light text-primary-200 p-4">
+            <div class="grid grid-cols-2 gap-x-3 justify-center items-center my-20 mx-20">
+                <div class="p-8 max-w-lg text-center">
+                    <h4 class="p-4 text-base font-light text-primary-200">
                         {
                             "Our Story"
                         }
                     </h4>
                     <SeperatorIcon />
-                    <h1 class=" text-5xl font-normal text-white p-6">
+                    <h1 class="p-6 text-5xl font-normal text-white">
                         {"We Offer Top Notch"}
                     </h1>
-                    <p class="text-white text-base leading-6 font-light p-4">
+                    <p class="p-4 text-base font-light leading-6 text-white">
                         {
                             "Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has 
                             been the industrys standard dummy text ever since the when an unknown printer took a galley
@@ -114,11 +114,11 @@ impl Component for Home {
                             "
                         }
                     </p>
-                    <a href="/About" class="text-primary-200 border-4 dark:border-primary-200 bg-transparent focus:ring-2 focus:outline-none font-medium text-base px-6 py-3.5 dark:bg-transparent dark:hover:bg-primary-200 dark:hover:text-black">
+                    <a href="/About" class="py-3.5 px-6 text-base font-medium bg-transparent border-4 dark:bg-transparent focus:ring-2 focus:outline-none text-primary-200 dark:border-primary-200 dark:hover:bg-primary-200 dark:hover:text-black">
                         {"READ MORE"}
                         </a>
                 </div>
-                <img src="/images/interior.jpeg" class="object-cover w-auto p-8"/>
+                <img src="/images/interior.jpeg" class="object-cover p-8 w-auto"/>
             </div>
             
         </div>

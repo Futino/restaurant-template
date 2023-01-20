@@ -12,113 +12,136 @@ module.exports = {
 
         // Primary tones
         primary: {
-          light: "rgba(var(--md-sys-color-primary-light) / <alpha-value>)",
-          dark: "rgba(var(--md-sys-color-primary-dark) / <alpha-value>)",
+          light: "var(--md-color-primary-light)",
+          dark: "var(--md-color-primary-dark)",
           on: {
-            light: "rgba(var(--md-sys-color-on-primary-light) / <alpha-value>)",
-            dark: "rgba(var(--md-sys-color-on-primary-dark) / <alpha-value>)",
+            light: "var(--md-color-on-primary-light) ",
+            dark: "var(--md-color-on-primary-dark) ",
           },
           container: {
             light:
-              "rgba(var(--md-sys-color-primary-container-light) / <alpha-value>)",
-            dark: "rgba(var(--md-sys-color-primary-container-dark) / <alpha-value>)",
+              "var(--md-color-primary-container-light) ",
+            dark: "var(--md-color-primary-container-dark) ",
             on: {
               light:
-                "rgba(var(--md-sys-color-on-primary-container-light) / <alpha-value>)",
-              dark: "rgba(var(--md-sys-color-on-primary-container-dark) / <alpha-value>)",
+                "var(--md-color-on-primary-container-light) ",
+              dark: "var(--md-color-on-primary-container-dark) ",
             },
           },
           inverse:
           {
             light:
-              "rgba(var(--md-sys-color-inverse-primary-light) / <alpha-value>)",
-            dark: "rgba(var(--md-sys-color-on-primary-container-dark) / <alpha-value>)",
+              "var(--md-color-inverse-primary-light) ",
+            dark: "var(--md-color-on-primary-container-dark) ",
           }
         },
 
         // Secondary tones
         secondary: {
-          light: "rgba(var(--md-sys-color-secondary-light) / <alpha-value>)",
-          dark: "rgba(var(--md-sys-color-secondary-dark) / <alpha-value>)",
+          light: "var(--md-color-secondary-light) ",
+          dark: "var(--md-color-secondary-dark) ",
           on: {
-            light: "rgba(var(--md-sys-color-on-secondary-light) / <alpha-value>)",
-            dark: "rgba(var(--md-sys-color-on-secondary-dark) / <alpha-value>)",
+            light: "var(--md-color-on-secondary-light) ",
+            dark: "var(--md-color-on-secondary-dark) ",
           },
           container: {
             light:
-              "rgba(var(--md-sys-color-secondary-container-light) / <alpha-value>)",
-            dark: "rgba(var(--md-sys-color-secondary-container-dark) / <alpha-value>)",
+              "var(--md-color-secondary-container-light) ",
+            dark: "var(--md-color-secondary-container-dark) ",
             on: {
               light:
-                "rgba(var(--md-sys-color-on-secondary-container-light) / <alpha-value>)",
-              dark: "rgba(var(--md-sys-color-on-secondary-container-dark) / <alpha-value>)",
+                "var(--md-color-on-secondary-container-light) ",
+              dark: "var(--md-color-on-secondary-container-dark) ",
             },
           },
         },
 
         // Tertiary tones
         tertiary: {
-          light: "rgba(var(--md-sys-color-tertiary-light) / <alpha-value>)",
-          dark: "rgba(var(--md-sys-color-tertiary-dark) / <alpha-value>)",
+          light: "var(--md-color-tertiary-light) ",
+          dark: "var(--md-color-tertiary-dark) ",
           on: {
-            light: "rgba(var(--md-sys-color-on-tertiary-light) / <alpha-value>)",
-            dark: "rgba(var(--md-sys-color-on-tertiary-dark) / <alpha-value>)",
+            light: "var(--md-color-on-tertiary-light) ",
+            dark: "var(--md-color-on-tertiary-dark) ",
           },
           container: {
             light:
-              "rgba(var(--md-sys-color-tertiary-container-light) / <alpha-value>)",
-            dark: "rgba(var(--md-sys-color-tertiary-container-dark) / <alpha-value>)",
+              "var(--md-color-tertiary-container-light) ",
+            dark: "var(--md-color-tertiary-container-dark) ",
             on: {
               light:
-                "rgba(var(--md-sys-color-on-tertiary-container-light) / <alpha-value>)",
-              dark: "rgba(var(--md-sys-color-on-tertiary-container-dark) / <alpha-value>)",
+                "var(--md-color-on-tertiary-container-light) ",
+              dark: "var(--md-color-on-tertiary-container-dark) ",
             },
           },
         },
 
         // Neutral tones (md3 names them as 'surface')
         neutral: {
-          light: "rgba(var(--md-sys-color-surface-light) / <alpha-value>)",
-          dark: "rgba(var(--md-sys-color-surface-dark) / <alpha-value>)",
+          light: "var(--md-color-surface-light) ",
+          dark: "var(--md-color-surface-dark) ",
           on: {
             inverse: {
-              light: "rgba(var(--md-sys-color-inverse-on-surface-light) / <alpha-value>)",
-              dark: "rgba(var(--md-sys-color-inverse-on-surface-dark) / <alpha-value>)",
+              light: "var(--md-color-inverse-on-surface-light) ",
+              dark: "var(--md-color-inverse-on-surface-dark) ",
             },
-            light: "rgba(var(--md-sys-color-on-surface-light) / <alpha-value>)",
-            dark: "rgba(var(--md-sys-color-on-surface-dark) / <alpha-value>)",
+            light: "var(--md-color-on-surface-light) ",
+            dark: "var(--md-color-on-surface-dark) ",
           },
           container: {
             light:
-              "rgba(var(--md-sys-color-neutral-container-light) / <alpha-value>)",
-            dark: "rgba(var(--md-sys-color-neutral-container-dark) / <alpha-value>)",
+              "var(--md-color-neutral-container-light) ",
+            dark: "var(--md-color-neutral-container-dark) ",
             on: {
               light:
-                "rgba(var(--md-sys-color-on-neutral-container-light) / <alpha-value>)",
-              dark: "rgba(var(--md-sys-color-on-neutral-container-dark) / <alpha-value>)",
+                "var(--md-color-on-neutral-container-light) ",
+              dark: "var(--md-color-on-neutral-container-dark) ",
             },
           },
           // Neutral variant tones
           variant:
           {
-            light: "rgba(var(--md-sys-color-neutral-light) / <alpha-value>)",
-            dark: "rgba(var(--md-sys-color-neutral-dark) / <alpha-value>)",
+            light: "var(--md-color-neutral-light) ",
+            dark: "var(--md-color-neutral-dark) ",
             on: {
-              light: "rgba(var(--md-sys-color-on-neutral-light) / <alpha-value>)",
-              dark: "rgba(var(--md-sys-color-on-neutral-dark) / <alpha-value>)",
+              light: "var(--md-color-on-neutral-light) ",
+              dark: "var(--md-color-on-neutral-dark) ",
             },
             container: {
               light:
-                "rgba(var(--md-sys-color-surface-variant-light) / <alpha-value>)",
-              dark: "rgba(var(--md-sys-color-surface-variant-dark) / <alpha-value>)",
+                "var(--md-color-surface-variant-light) ",
+              dark: "var(--md-color-surface-variant-dark) ",
               on: {
                 light:
-                  "rgba(var(--md-sys-color-on-surface-variant-light) / <alpha-value>)",
-                dark: "rgba(var(--md-sys-color-on-surface-variant-dark) / <alpha-value>)",
+                  "var(--md-color-on-surface-variant-light) ",
+                dark: "var(--md-color-on-surface-variant-dark) ",
               },
             },
           }
         },
+
+        // On Error tones
+        error:{
+          light:
+          "var(--md-color-error-light) ",
+        dark: "var(--md-color-error-dark) ",
+        on: {
+          light:
+            "var(--md-color-on-error-light) ",
+          dark: "var(--md-color-on-error-dark) ",
+        },
+        container: {
+          light:
+            "var(--md-color-error-container-light) ",
+          dark: "var(--md-color-error-container-light) ",
+          on: {
+            light:
+              "var(--md-color-on-error-container-light) ",
+            dark: "var(--md-color-on-error-container-dark) ",
+          },
+        },
+        },
+      
 
         // Back
       },

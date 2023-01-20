@@ -16,24 +16,24 @@ impl Component for About {
         <main>
           // Top section
           <div
-            class="py-40 px-4 sm:px-6 md:px-8 border-b border-secondary-500/40 shadow-2xl">
-            <div class="relative max-w-5xl mx-auto text-center">
-              <h4 class="text-base font-light text-primary-200 p-4">
+            class="py-40 px-4 border-b shadow-2xl sm:px-6 md:px-8 border-secondary-500/40">
+            <div class="relative mx-auto max-w-5xl text-center">
+              <h4 class="p-4 text-base font-light text-primary-200">
                 {
                     "Our Story"
                 }
             </h4>
             <SeperatorIcon />
-            <h1 class=" text-5xl font-normal text-white p-6">
+            <h1 class="p-6 text-5xl font-normal text-white">
                 {"About Us"}
             </h1>
             </div>
           </div>
 
           // Staff section
-          <div class="relative border-b border-secondary-500/40 shadow-2xl">
+          <div class="relative border-b shadow-2xl border-secondary-500/40">
             <div class="my-40 mx-32 text-center">
-              <h1 class="p-6 font-bold text-xl text-primary-200">
+              <h1 class="p-6 text-xl font-bold text-primary-200">
                 {"WHO WE ARE."}
               </h1>
               <p class="text-">
@@ -43,7 +43,7 @@ impl Component for About {
               </p>
             </div>
             <div>
-              <div id="staff" class="justify-items-center grid grid-cols-2 p-6">
+              <div id="staff" class="grid grid-cols-2 justify-items-center p-6">
                 <StaffCard name="Jonas Lewis"
                         title="Lead Developer, Co-Founder, & Co-Owner" >
                         <p class="text-lg">
@@ -79,13 +79,13 @@ impl Component for About {
           </div>
 
 
-          <div class="relative border-b border-secondary-500/40 shadow-2xl">
+          <div class="relative border-b shadow-2xl border-secondary-500/40">
             <div class="my-32 mx-32">
-              <h1 class="inline text-left font-bold text-3xl text-white">
+              <h1 class="inline text-3xl font-bold text-left text-white">
                 <a class="font-black text-primary-200">{"What"}</a>
                 {" we do."}
               </h1>
-              <h1 class="text-left text-white font-normal text-xl max-w-2xl pt-6">
+              <h1 class="pt-6 max-w-2xl text-xl font-normal text-left text-white">
                 {"Futino creates and maintains dynamic web-apps that don't rely on
                 proprietary subscription-based solutions. We help growing companies
                 and startups to build their presence online with beautiful websites
@@ -93,13 +93,13 @@ impl Component for About {
               </h1>
             </div>
           </div>
-          <div class="relative border-b border-secondary-500/40 shadow-2xl">
+          <div class="relative border-b shadow-2xl border-secondary-500/40">
             <div class="my-32 mx-32">
-              <h1 class="inline text-left font-bold text-3xl text-white">
+              <h1 class="inline text-3xl font-bold text-left text-white">
                 <a class="font-black text-primary-200">{"Why"}</a>
                 {" we do."}
               </h1>
-              <h1 class="text-left text-white font-normal text-xl max-w-2xl pt-6">
+              <h1 class="pt-6 max-w-2xl text-xl font-normal text-left text-white">
                 {"Futino creates and maintains dynamic web-apps that don't rely on
                 proprietary subscription-based solutions. We help growing companies
                 and startups to build their presence online with beautiful websites
