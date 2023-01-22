@@ -52,15 +52,35 @@ pub fn SeperatorIcon() -> Html {
     html! {
 
             <svg width="110" height="70" x="0px" y="0px" viewBox="0 0 97.1 12.7" enable-background="new 0 0 97.1 12.7" space="preserve">
-                <rect x="31.6" y="3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 14.7528 -22.8645)" fill="none" stroke="#E3C48E" stroke-width="0.75" stroke-miterlimit="10" width="6.8" height="6.8"/>
-                <rect x="58.7" y="3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 22.699 -42.0484)" fill="none" stroke="#E3C48E" stroke-width="0.75" stroke-miterlimit="10" width="6.8" height="6.8"/>
-                <polygon fill="none" stroke="#E3C48E" stroke-width="0.75" stroke-miterlimit="10" points="48.6,12.1 39.8,6.4 48.6,0.6 57.3,6.4 
+                <rect x="31.6" y="3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 14.7528 -22.8645)" fill="none" stroke="currentColor" stroke-width="0.75" stroke-miterlimit="10" width="6.8" height="6.8"/>
+                <rect x="58.7" y="3" transform="matrix(0.7071 0.7071 -0.7071 0.7071 22.699 -42.0484)" fill="none" stroke="currentColor" stroke-width="0.75" stroke-miterlimit="10" width="6.8" height="6.8"/>
+                <polygon fill="none" stroke="currentColor" stroke-width="0.75" stroke-miterlimit="10" points="48.6,12.1 39.8,6.4 48.6,0.6 57.3,6.4 
                     "/>
-                <line fill="none" stroke="#E3C48E" stroke-width="0.75" stroke-miterlimit="10" x1="3.2" y1="6.4" x2="30.2" y2="6.4"/>
-                <circle fill="#E3C48E" cx="2.6" cy="6.4" r="2.5"/>
-                <line fill="none" stroke="#E3C48E" stroke-width="0.75" stroke-miterlimit="10" x1="93.9" y1="6.4" x2="66.9" y2="6.4"/>
-                <circle fill="#E3C48E" cx="94.4" cy="6.4" r="2.5"/>
+                <line fill="none" stroke="currentColor" stroke-width="0.75" stroke-miterlimit="10" x1="3.2" y1="6.4" x2="30.2" y2="6.4"/>
+                <circle fill="currentColor" cx="2.6" cy="6.4" r="2.5"/>
+                <line fill="none" stroke="currentColor" stroke-width="0.75" stroke-miterlimit="10" x1="93.9" y1="6.4" x2="66.9" y2="6.4"/>
+                <circle fill="currentColor" cx="94.4" cy="6.4" r="2.5"/>
             </svg>
+        
+
+    }
+}
+
+#[function_component]
+pub fn RightArrow() -> Html {
+    html! {
+
+        <svg fill="currentColor" height="14" width="14" viewBox="0 0 64 64" version="1.1" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+            <g id="SVGRepo_bgCarrier" stroke-width="0"></g><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+            <g id="SVGRepo_iconCarrier"> <rect id="Icons" x="-320" y="-128" width="1280" height="800" style="fill:none;"></rect> <g id="Icons1" > <g id="Strike"> </g> 
+            <g id="H1"> </g> <g id="H2"> </g> <g id="H3"> </g> <g id="list-ul"> </g> <g id="hamburger-1"> </g> <g id="hamburger-2"> </g> <g id="list-ol"> </g> <g id="list-task"> </g> 
+            <g id="trash"> </g> <g id="vertical-menu"> </g> <g id="horizontal-menu"> </g> <g id="sidebar-2"> </g> <g id="Pen"> </g> <g id="Pen1" > </g> <g id="clock"> </g> 
+            <g id="external-link"> </g> <g id="hr"> </g> <g id="info"> </g> <g id="warning"> </g> <g id="plus-circle"> </g> <g id="minus-circle"> </g> 
+            <path id="caret-right" d="M45.01,32.025l-24.071,-24.071l-3.008,3.009l21.061,21.062l-21.061,21.062l3.008,3.008l24.071,-24.07Z" style="fill-rule:nonzero;"></path> 
+            <g id="vue"> </g> <g id="cog"> </g> <g id="logo"> </g> <g id="radio-check"> </g> <g id="eye-slash"> </g> <g id="eye"> </g> <g id="toggle-off"> </g> <g id="shredder"> </g> 
+            <g id="spinner--loading--dots-" > </g> <g id="react"> </g> <g id="check-selected"> </g> <g id="turn-off"> </g> <g id="code-block"> </g> 
+            <g id="user"> </g> <g id="coffee-bean"> </g> <g id="coffee-beans"> <g id="coffee-bean1" > </g> </g> <g id="coffee-bean-filled"> </g> <g id="coffee-beans-filled"> <g id="coffee-bean2" > </g> </g> 
+            <g id="clipboard"> </g> <g id="clipboard-paste"> </g> <g id="clipboard-copy"> </g> <g id="Layer1"> </g> </g> </g></svg>
         
 
     }

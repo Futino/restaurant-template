@@ -10,7 +10,7 @@ pub fn ThemeButton() -> Html {
     });
 
     html! {
-        <button onclick={onclick} class="fill-primary-200/20 stroke-primary-200 hover:fill-accent-400/20 hover:stroke-accent-400">
+        <button onclick={onclick} class="fill-primary-light stroke-primary-light hover:fill-tertiary-light hover:stroke-tertiary-light dark:fill-primary-dark dark:stroke-primary-dark dark:hover:fill-tertiary-dark dark:hover:stroke-tertiary-dark">
             // Light mode
             <span class="dark:hidden">
                 <svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6">

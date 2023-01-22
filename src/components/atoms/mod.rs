@@ -21,3 +21,4 @@ pub use svg_icons::LocationIcon;
 pub use svg_icons::MenuIcon;
 pub use svg_icons::SquareIcon;
 pub use svg_icons::SeperatorIcon;
+pub use svg_icons::RightArrow;
