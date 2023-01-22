@@ -1,6 +1,6 @@
 use yew::prelude::*;
 
-use crate::components::*;
+use crate::lorc::generic::*;
 
 pub struct About;
 impl Component for About {
@@ -37,7 +37,7 @@ impl Component for About {
                 {"WHO WE ARE."}
               </h1>
               <p class="text-">
-                {"A modern restaurant with a menu that will make your mouth water. 
+                {"A modern restaurant with a menu that will make your mouth water.
                 Servicing delicious food since 45 years. Enjoy our seasonal menu and
                  experience the beauty of naturalness"}
               </p>
@@ -51,7 +51,7 @@ impl Component for About {
                             ullamcorper ornare arcu amet dui habitasse placerat suspendisse vulputate nisl."}
                             </p>
                             <p class="text-lg">
-                                {"Lorem ipsum dolor sit amet fermentum ut curabitur maecenas facilisis 
+                                {"Lorem ipsum dolor sit amet fermentum ut curabitur maecenas facilisis
                                 ullamcorper ornare arcu amet dui habitasse placerat suspendisse vulputate nisl."}
                                 </p>
                                 <p class="text-lg">

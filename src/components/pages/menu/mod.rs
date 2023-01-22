@@ -2,6 +2,8 @@ use yew::prelude::*;
 
 use crate::components::*;
 
+use crate::lorc::generic::*;
+
 pub struct Menu;
 
 impl Component for Menu {
@@ -81,7 +83,7 @@ impl Component for Menu {
                 </div>
             </div>
 
-            
+
 
             <div class="p-8 pb-12 mx-auto max-w-7xl">
                 <div class="text-center">
@@ -106,7 +108,7 @@ impl Component for Menu {
                 </div>
             </div>
 
-            
+
         </div>
 
         </main>
