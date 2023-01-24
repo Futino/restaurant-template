@@ -38,7 +38,7 @@ impl Component for Home {
         </div>
 
             // About section
-            <div class="bg-surface-dark">
+            <div class="bg-surface-light">
                 <div class="grid grid-cols-2 gap-x-3 justify-center items-center my-20 mx-20">
                     <div class="p-8 max-w-lg text-center">
                         <h4 class="p-4 text-base font-light text-primary-200">
@@ -47,10 +47,10 @@ impl Component for Home {
                             }
                         </h4>
                         <SeperatorIcon />
-                        <h1 class="p-6 text-5xl font-normal text-white">
+                        <h1 class="p-6 text-5xl font-normal text-surface-on-light">
                             {"We Offer Top Notch"}
                         </h1>
-                        <p class="p-4 text-base font-light leading-6 text-white">
+                        <p class="p-4 text-base font-light leading-6 text-surface-on-light">
                             {
                                 "Lorem Ipsum is simply dummy text of the printingand typesetting industry lorem Ipsum has
                             been the industrys standard dummy text ever since the when an unknown printer took a galley

@@ -11,8 +11,9 @@ use props::Props;
 #[function_component]
 pub fn Header(props: &Props) -> Html {
     html! {
-        <div class="fixed z-40 top-0 w-full backdrop-blur flex-none transition-colors duration-500 bg-surface-light/5">
-            <div class="py-4 border-b border-secondary-light/10 mx-5">
+        <div class="fixed z-40 top-0 w-full backdrop-blur flex-none ">
+            <div class="py-4 border-b border-secondary-light/10 mx-auto justify-items-center bg-surface-light/5">
+                // Top Header
                 <div class="px-auto xl:px-40 lg:px-20 md:px-10 md:px-auto relative flex items-center">
 
                     // Left side
@@ -55,6 +56,19 @@ pub fn Header(props: &Props) -> Html {
                     </div>
                 </div>
             </div>
+            // Event header
+                <div class="relative flex bg-primary-container-light">
+
+                    // Event Message
+                    <div class="flex mx-auto transition ease-in-out delay-150 duration-300 hover:-scale-110">
+                        <div class="p-6 text-xl leading-6 font-semibold text-primary-container-on-light">
+                            <p>
+                                {"Today is Taco Tuesday!!! Choose between crowd favorites Guijillo Roasted Chicken and Fried Clams!"}
+                            </p>
+                        </div>
+                    </div>
+
+                </div>
         </div>
 
     }
