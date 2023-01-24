@@ -18,21 +18,20 @@ impl Component for Home {
 
             // Top section
             <div class="top-0 py-60 px-4 sm:px-6 md:px-8 border-b border-secondary-light/40 shadow-2xl bg-[url('/images/burger.jpg')] bg-cover object-contain  bg-center">
-            <div class="relative max-w-6xl mx-auto space-y-4">
+            <div class="relative max-w-6xl mx-auto my-20 space-y-6">
                 <Label>
-                    <h1 class="font-normal font-bilbo text-8xl text-primary-light">
-                        {"Welcome"}
-                    </h1>
-                </Label>
-
-                <Label>
-                    <h2 class="text-8xl tracking-wider font-ubuntu text-primary-on-light border-y border-primary-on-light max-w-fit mx-auto">
-                        {"SOUTHSIDE LANTAU"}
+                    <h2 class="text-2xl text-primary-light ">
+                        {"AMERICAN SOUL FOOD"}
                     </h2>
                 </Label>
                 <Label>
-                    <h2 class="text-2xl text-primary-on-light ">
-                        {"AMERICAN SOUL FOOD"}
+                    <h2 class="text-9xl tracking-wider font-bilbo text-primary-on-light border-y border-primary-on-light max-w-fit mx-auto">
+                        {"Southside"}
+                    </h2>
+                </Label>
+                <Label>
+                    <h2 class="text-6xl font-ubuntu text-primary-on-light ">
+                        {"LANTAU"}
                     </h2>
                 </Label>
             </div>

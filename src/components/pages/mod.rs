@@ -9,3 +9,6 @@ pub use contact::Contact;
 
 mod menu;
 pub use menu::Menu;
+
+mod page;
+pub use page::Page;

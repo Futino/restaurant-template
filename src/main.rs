@@ -5,7 +5,6 @@ mod components;
 use components::*;
 
 mod lorc;
-use lorc::generic::templates::Page;
 
 #[derive(Clone, Routable, PartialEq)]
 enum Route {
