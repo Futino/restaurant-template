@@ -17,7 +17,7 @@ impl Component for Home {
             <main>
 
             // Top section
-            <div class="top-0 py-60 px-4 sm:px-6 md:px-8 border-b dark:border-secondary-dark/40 shadow-2xl bg-[url('/images/burger.jpg')] bg-cover object-contain  bg-center">
+            <div class="top-0 py-60 px-4 sm:px-6 md:px-8 border-b border-secondary-light/40 shadow-2xl bg-[url('/images/burger.jpg')] bg-cover object-contain  bg-center">
             <div class="relative max-w-6xl mx-auto space-y-4">
                 <Label>
                     <h1 class="font-normal font-bilbo text-8xl text-primary-light">
@@ -39,7 +39,7 @@ impl Component for Home {
         </div>
 
             // About section
-            <div class="bg-stone-900">
+            <div class="bg-surface-dark">
                 <div class="grid grid-cols-2 gap-x-3 justify-center items-center my-20 mx-20">
                     <div class="p-8 max-w-lg text-center">
                         <h4 class="p-4 text-base font-light text-primary-200">
