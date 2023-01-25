@@ -97,9 +97,9 @@ impl Component for Home {
                 </div>
                 <div>
                     <Carousel image_paths={vec![
-                        "burger1.jpg".to_string(),
-                        "fries.jpg".to_string(),
-                        "wings.jpg".to_string(),
+                        "/images/burger1.jpg".to_string(),
+                        "/images/fries.jpg".to_string(),
+                        "/images/wings.jpg".to_string(),
                     ]}/>
                 </div>
             </div>
