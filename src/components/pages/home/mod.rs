@@ -1,6 +1,6 @@
 use yew::prelude::*;
 
-use crate::lorc::generic::*;
+use crate::lorc::generic::atoms::*;
 
 use crate::components::*;
 
@@ -38,7 +38,7 @@ impl Component for Home {
                     </Label>
                 </div>
             </div>
-        
+
         // Menu Section
         <div class="w-full bg-surface-light dark:bg-surface-dark">
             <Label>
@@ -46,15 +46,15 @@ impl Component for Home {
                     {"OUR FOOD"}
                 </h1>
             </Label>
-            
+
             // Burger section
-            <div class="bg-surface-variant-light mx-28 py-5">
+            <div class="mx-28 py-5">
                 <Label>
                     <h1 class="py-6 text-left font-ubuntu text-3xl text-primary-light dark:text-primary-light">
                         {"Burgers"}
                     </h1>
                 </Label>
-                <div class="grid grid-cols-3 gap-x-5">
+                <div class=" grid grid-cols-3 gap-x-5">
                     <MenuItem img_path="/images/single_burger.jpg" name="Southside Burger" ingredients="Home-style cheeseburger, Served with cheese, lettuce, tomato, dill pickles, mayo, and ketchup." cost=97.0 />
                     <MenuItem img_path="/images/single_burger.jpg" name="Double Double" ingredients="More protein than you can shake a stick at. Same burger with double beef and cheese." cost=97.0 />
                     <MenuItem img_path="/images/single_burger.jpg" name="Cowboy Burger" ingredients="Texas style with smooky barbeque, crispy fried onions, lettuce, tomato, and guacamole." cost=97.0 />
@@ -62,7 +62,7 @@ impl Component for Home {
             </div>
 
             // Burger section
-            <div class="bg-surface-variant-light mx-28 py-5">
+            <div class=" mx-28 py-5">
                 <Label>
                     <h1 class="py-6 text-left font-ubuntu text-3xl text-surface-variant-on-light dark:text-surface-variant-on-dark">
                         {"Wings & Tenders"}
@@ -76,7 +76,32 @@ impl Component for Home {
             </div>
 
         </div>
-            </>
+
+        // Find us section
+        <div class="">
+            <Label>
+                <h1 class="p-14 font-ubuntu text-6xl text-center text-surface-on-light dark:text-surface-on-dark">
+                    {"FIND US!"}
+                </h1>
+            </Label>
+            <div class="grid grid-cols-2 gap-x-10 justify-center items-center gap-y-7">
+                <div>
+                    <iframe class="mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1126.2156921238252!2d114.00061451484943!3d22.26462049824039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3401572b43cb03a9%3A0x9066091be70524b5!2sSouthside%20Lantau!5e1!3m2!1sen!2shk!4v1674646720734!5m2!1sen!2shk"
+                        width="600" height="600" style="border:0;" allowfullscreen=true loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                    <Button btn_type="button">
+                        <h1 class="text-center text-xl text-primary-on-light dark:text-primary-on-dark">
+                            {"Find us on google maps"}
+                        </h1>
+                    </Button>
+                </div>
+                <div>
+                    
+                </div>
+            </div>
+            
+        </div>
+        </>
         }
     }
 }

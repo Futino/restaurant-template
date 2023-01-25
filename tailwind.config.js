@@ -99,11 +99,11 @@ module.exports = {
           // Neutral variant tones
           variant:
           {
-            light: "rgb(var(--md-sys-color-neutral-light)/ <alpha-value>) ",
-            dark: "rgb(var(--md-sys-color-neutral-dark) / <alpha-value>) ",
+            light: "rgb(var(--md-sys-color-surface-variant-light)/ <alpha-value>) ",
+            dark: "rgb(var(--md-sys-color-surface-variant-dark) / <alpha-value>) ",
             on: {
-              light: "rgb(var(--md-sys-color-on-neutral-light)/ <alpha-value>) ",
-              dark: "rgb(var(--md-sys-color-on-neutral-dark) / <alpha-value>) ",
+              light: "rgb(var(--md-sys-color-on-surface-variant-light)/ <alpha-value>) ",
+              dark: "rgb(var(--md-sys-color-on-surface-variant-dark) / <alpha-value>) ",
             },
           }
         },
