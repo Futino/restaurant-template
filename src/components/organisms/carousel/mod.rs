@@ -1,5 +1,4 @@
 use gloo::console::log;
-use web_sys::console::log;
 use yew::prelude::*;
 
 use crate::lorc::generic::atoms::*;
