@@ -48,16 +48,30 @@ impl Component for Home {
             </Label>
             
             // Burger section
-            <div class="bg-surface-variant-light mx-28 py-10">
+            <div class="bg-surface-variant-light mx-28 py-5">
                 <Label>
-                    <h1 class="py-6 text-left font-ubuntu text-3xl text-surface-variant-on-light dark:text-surface-variant-on-dark">
+                    <h1 class="py-6 text-left font-ubuntu text-3xl text-primary-light dark:text-primary-light">
                         {"Burgers"}
                     </h1>
                 </Label>
                 <div class="grid grid-cols-3 gap-x-5">
-                    <MenuItem img_path="/images/single_burger.jpg" name="Southside Burger" ingredients="Home-style cheeseburger, Served with cheese, lettuce, tomato, dill pickles, mayo, and ketchup" cost=97.0 />
-                    <MenuItem img_path="/images/single_burger.jpg" name="Double Double" ingredients="Home-style cheeseburger, Served with cheese, lettuce, tomato, dill pickles, mayo, and ketchup" cost=97.0 />
-                    <MenuItem img_path="/images/single_burger.jpg" name="Double Double" ingredients="Home-style cheeseburger, Served with cheese, lettuce, tomato, dill pickles, mayo, and ketchup" cost=97.0 />
+                    <MenuItem img_path="/images/single_burger.jpg" name="Southside Burger" ingredients="Home-style cheeseburger, Served with cheese, lettuce, tomato, dill pickles, mayo, and ketchup." cost=97.0 />
+                    <MenuItem img_path="/images/single_burger.jpg" name="Double Double" ingredients="More protein than you can shake a stick at. Same burger with double beef and cheese." cost=97.0 />
+                    <MenuItem img_path="/images/single_burger.jpg" name="Cowboy Burger" ingredients="Texas style with smooky barbeque, crispy fried onions, lettuce, tomato, and guacamole." cost=97.0 />
+                </div>
+            </div>
+
+            // Burger section
+            <div class="bg-surface-variant-light mx-28 py-5">
+                <Label>
+                    <h1 class="py-6 text-left font-ubuntu text-3xl text-surface-variant-on-light dark:text-surface-variant-on-dark">
+                        {"Wings & Tenders"}
+                    </h1>
+                </Label>
+                <div class="grid grid-cols-3 gap-x-5">
+                    <MenuItem img_path="/images/tenders.jpg" name="Teriyaki" ingredients="Sweet Japanese sauce with sesame and soy." cost=97.0 />
+                    <MenuItem img_path="/images/wings.jpg" name="Honey Barbeque" ingredients="Sweet, smoky barbeque" cost=97.0 />
+                    <MenuItem img_path="/images/tenders.jpg" name="Sweet Thai Chili" ingredients="Sweet and mild" cost=97.0 />
                 </div>
             </div>
 

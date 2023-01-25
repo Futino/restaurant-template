@@ -6,12 +6,17 @@ module.exports = {
   content: ["./index.html", "./src/**/*.{html,js,rs}"],
   darkMode: "class",
   theme: {
-    
     extend: {
       fontFamily: {
       bilbo: ["Bilbo Swash Caps"],
       ubuntu: ["Ubuntu"]
-    },
+      },
+      spacing: {
+        '110': '27.5rem',
+      },
+      borderWidth: {
+        1: "1px",
+      },
       colors: {
         // Primary tones
         primary: {
@@ -148,10 +153,6 @@ module.exports = {
             },
           },
         },
-      },
-      
-      borderWidth: {
-        1: "1px",
       },
     },
   },

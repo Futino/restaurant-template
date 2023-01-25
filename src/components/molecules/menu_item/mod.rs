@@ -16,22 +16,23 @@ pub fn MenuItem(props: &Props) -> Html {
 
     let cost = format!("${:.2}", cost);
     html! {
-        <div class="pb-6">
-            <div class="flex flex-col pb-2">
-                <img src={img_path.to_owned()} class="object-cover object-center w-full h-full" alt="Tailwind Play" />
-            <h1 class="py-2 text-lg text-surface-on-light dark:text-surface-on-dark">
-                {name}
-            </h1>
-            <div class="inline-flex self-center h-2 border-primary-light dark:border-primary-dark grow border-t-1 border-b-1">
-            </div>
-            <h1 class="text-xl text-surface-on-light dark:text-surface-on-dark">
-                {cost}
-            </h1>
-            </div>
-        <h2 class="py-1 text-base font-light text-surface-on-light dark:text-surface-on-dark">
-            {ingredients}
-        </h2>
-
+        <div class="flex flex-col pb-2 w-110">
+                <img src={img_path.to_owned()} class="object-cover object-center w-110 h-110" alt="Tailwind Play" />
+                <div class="py-2 flex flex-row">
+                    <h1 class="ml-auto pr-2 text-xl text-surface-on-light dark:text-surface-on-dark">
+                        {name}
+                    </h1>
+                    <div class="inline-flex self-center h-2 border-primary-light dark:border-primary-dark grow border-t-1 border-b-1">
+                    </div>
+                    <h1 class="mr-auto pl-2 text-xl text-surface-on-light dark:text-surface-on-dark">
+                        {cost}
+                    </h1>
+                </div>
+            
+            
+            <h2 class="py-1 text-base font-light text-surface-on-light dark:text-surface-on-dark">
+                {ingredients}
+            </h2>
     </div>
         }
 }
