@@ -14,6 +14,7 @@ module.exports = {
       spacing: {
         '110': '27.5rem',
         '600': '600px',
+        '800': '800px',
       },
       borderWidth: {
         1: "1px",

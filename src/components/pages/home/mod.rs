@@ -84,22 +84,30 @@ impl Component for Home {
                     {"FIND US!"}
                 </h1>
             </Label>
-            <div class="grid grid-cols-2 gap-x-10 justify-center items-center gap-y-7">
-                <div>
-                    <iframe class="mx-auto" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1126.2156921238252!2d114.00061451484943!3d22.26462049824039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3401572b43cb03a9%3A0x9066091be70524b5!2sSouthside%20Lantau!5e1!3m2!1sen!2shk!4v1674646720734!5m2!1sen!2shk"
-                        width="600" height="600" style="border:0;" allowfullscreen=true loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+            <div class="grid grid-cols-2 gap-x-10 justify-center gap-y-7 mx-10">
+                <div class="flex flex-col justify-center gap-y-7">
+                    //TODO need to scale maps based on images to the right of it
+                    <iframe class="mx-auto w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1126.2156921238252!2d114.00061451484943!3d22.26462049824039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3401572b43cb03a9%3A0x9066091be70524b5!2sSouthside%20Lantau!5e1!3m2!1sen!2shk!4v1674646720734!5m2!1sen!2shk"
+                    height="700" style="border:0;" allowfullscreen=true loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
-                    <Button btn_type="button">
-                        <h1 class="text-center text-xl text-primary-on-light dark:text-primary-on-dark">
-                            {"Find us on google maps"}
-                        </h1>
-                    </Button>
+                    <div class="max-w-2xl mx-auto">
+                        <Button btn_type="button">
+                            <h1 class="text-center text-xl">
+                                {"Find us on google maps"}
+                            </h1>
+                        </Button>
+                    </div>
                 </div>
-                <div>
+                <div class="flex flex-col">
+                    <Label>
+                    <h1 class="p-8 font-bold text-3xl text-surface-on-light dark:text-surface-on-dark">
+                        {"Can you spot us?"}
+                    </h1>
+                    </Label>
                     <Carousel image_paths={vec![
-                        "/images/burger1.jpg".to_string(),
-                        "/images/fries.jpg".to_string(),
-                        "/images/wings.jpg".to_string(),
+                        "/images/outside.png".to_string(),
+                        "/images/outside1.png".to_string(),
+                        "/images/outside2.png".to_string(),
                     ]}/>
                 </div>
             </div>
