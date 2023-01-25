@@ -38,11 +38,11 @@
         --md-sys-color-scrim-light: 0 0 0;
         /* dark */
         --md-sys-color-primary-dark: 255 182 136;
-        --md-sys-color-on-primary-dark: 81 36 0;
+        --md-sys-color-on-primary-dark: 255 255 255;
         --md-sys-color-primary-container-dark: 115 53 0;
         --md-sys-color-on-primary-container-dark: 255 219 199;
         --md-sys-color-secondary-dark: 229 191 169;
-        --md-sys-color-on-secondary-dark: 67 43 28;
+        --md-sys-color-on-secondary-dark: 255 255 255;
         --md-sys-color-secondary-container-dark: 91 65 48;
         --md-sys-color-on-secondary-container-dark: 255 219 199;
         --md-sys-color-tertiary-dark: 202 201 147;

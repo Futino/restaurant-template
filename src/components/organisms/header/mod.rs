@@ -22,14 +22,14 @@ pub fn Header(props: &Props) -> Html {
                             <ul class="m-auto flex space-x-8 items-center">
                                 <p class="inline-flex">
                                     <span ><LocationIcon/></span>
-                                    {"Stavanger, Norway"}
+                                    {"Mui Wo, Lantau"}
                                 </p>
 
                                 <SquareIcon />
 
                                 <p class="inline-flex items-center">
                                     <span class="p-1"><ClockIcon /></span>
-                                    {"Wednessday and Friday : 18:00 to 21:00"}
+                                    {"Monday to Friday : 17:00 to 21:00"}
                                 </p>
                             </ul>
                         </div>
@@ -49,7 +49,7 @@ pub fn Header(props: &Props) -> Html {
                                 <SquareIcon />
                                 </li>
                                 <li>
-                                    {"template@allheim.com"}
+                                    {"template@southside.com"}
                                 </li>
                             </ul>
                         </nav>
@@ -60,14 +60,13 @@ pub fn Header(props: &Props) -> Html {
                 <div class="relative flex bg-primary-container-light">
 
                     // Event Message
-                    <div class="flex mx-auto transition ease-in-out delay-150 duration-300 hover:-scale-110">
+                    <div class="flex mx-auto transition ease-in-out delay-150 duration-300 hover:scale-110">
                         <div class="p-6 text-xl leading-6 font-semibold text-primary-container-on-light">
                             <p>
                                 {"Today is Taco Tuesday!!! Choose between crowd favorites Guijillo Roasted Chicken and Fried Clams!"}
                             </p>
                         </div>
                     </div>
-
                 </div>
         </div>
 
