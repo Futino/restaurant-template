@@ -1,9 +1,6 @@
 use yew::{function_component, html, Html};
 
-use crate::components::*;
 use crate::lorc::generic::atoms::*;
-use crate::lorc::generic::molecules::*;
-use crate::lorc::generic::organisms::*;
 
 mod props;
 use props::Props;
