@@ -64,7 +64,7 @@ impl Component for Home {
             // Burger section
             <div class=" mx-28 py-5">
                 <Label>
-                    <h1 class="py-6 text-left font-ubuntu text-3xl text-surface-variant-on-light dark:text-surface-variant-on-dark">
+                    <h1 class="py-6 text-left font-ubuntu text-3xl text-primary-light dark:text-primary-light">
                         {"Wings & Tenders"}
                     </h1>
                 </Label>
@@ -78,9 +78,9 @@ impl Component for Home {
         </div>
 
         // Find us section
-        <div class="">
+        <div class="my-20">
             <Label>
-                <h1 class="p-14 font-ubuntu text-6xl text-center text-surface-on-light dark:text-surface-on-dark">
+                <h1 class="p-14 font-ubuntu text-6xl text-center">
                     {"FIND US!"}
                 </h1>
             </Label>
@@ -105,10 +105,10 @@ impl Component for Home {
                         "/images/outside2.png".to_string(),
                     ]} height="h-600"/>
                     <Label>
-                        <h1 class="font-bold text-3xl text-surface-on-light dark:text-surface-on-dark">
+                        <h1 class="font-bold text-3xl">
                             {"Can you spot us?"}
                         </h1>
-                        </Label>
+                    </Label>
                 </div>
             </div>
 
@@ -116,11 +116,35 @@ impl Component for Home {
 
         // Our Story Section
         <div class="w-full bg-surface-light dark:bg-surface-dark">
-            <Label>
-                <h1 class="p-8 pt-0 font-bold text-3xl text-surface-on-light dark:text-surface-on-dark">
-                    {"Our Story"}
-                </h1>
-                </Label>
+            <div class="mx-32 py-36">
+                <div class="grid grid-cols-2 gap-x-10">
+                    <div class="flex flex-col items-center gap-y-10">
+                        <Label>
+                            <h1 class="p-8 pt-0 font-bold text-8xl text-primary-light">
+                                {"OUR STORY"}
+                            </h1>
+                        </Label>
+                        <Testimonial author="Slaptoon" quote="THE BEST BURGERS IN HONG KONG"/>
+                        <Testimonial author="Burger God" quote="IT'S SO VERY SIMIPLE, AND WE LOVE IT."/>
+                        <Testimonial author="EINSTEIN" quote="BEST BURGERS IN HONG KONG"/>
+                    </div>
+                    <h1 class="text-left text-2xl text-surface-on-light dark:text-surface-on-dark tracking-wide leading-loose">
+                       {"Honbo opened its first shop in March 2017 on Sun Street, Wan Chai.
+
+                        Honbo is a homegrown classic cheeseburger joint that celebrates simple and straightforward American-style burgers through honest cooking and careful sourcing of quality ingredients.
+                        Instead of loading a burger up with excessive extravagant ingredients, we prefer to take the no-frills approach by focusing on perfecting the classic burger. 
+                        This is apparent throughout every aspect of our brand DNA and is especially reflected in the simplicity of the menu.
+            
+                       We do so by concentrating on some of the often-overlooked details; from developing a unique all-natural potato milk bun recipe with our artisanal baker, 
+                       to importing our own Double Gold American beef from Wisconsin. Every element in a Honbo burger showcases the very best flavors Hong Kong has to offer. 
+                       
+                       As of Summer 2019, Honbo’s reach has grown to both sides of the Victoria Harbour. Fans can now enjoy a #RealGoodBurger— guaranteed to be made with care, 
+                       love and honesty— from two locations: Sun Street in Wan Chai and The Mills in Tsuen Wan.
+                       "}
+                    </h1>
+    
+                </div>
+            </div>
         </div>
         </>
         }
