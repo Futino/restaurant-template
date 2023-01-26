@@ -54,7 +54,7 @@ pub fn Header(props: &Props) -> Html {
                 </div>
             </div>
             // Event header
-                <div class="relative flex bg-primary-container-light">
+                <div class="relative flex bg-primary-container-light ">
 
                     // Event Message
                     <div class="flex mx-auto transition ease-in-out delay-150 duration-300 hover:scale-110">

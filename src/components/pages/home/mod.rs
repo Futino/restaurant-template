@@ -84,34 +84,43 @@ impl Component for Home {
                     {"FIND US!"}
                 </h1>
             </Label>
-            <div class="grid grid-cols-2 gap-x-10 justify-center gap-y-7 mx-10">
+            <div class="grid grid-cols-2 gap-x-10 justify-center gap-y-7 mx-36">
                 <div class="flex flex-col justify-center gap-y-7">
                     //TODO need to scale maps based on images to the right of it
                     <iframe class="mx-auto w-full" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1126.2156921238252!2d114.00061451484943!3d22.26462049824039!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3401572b43cb03a9%3A0x9066091be70524b5!2sSouthside%20Lantau!5e1!3m2!1sen!2shk!4v1674646720734!5m2!1sen!2shk"
-                    height="700" style="border:0;" allowfullscreen=true loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+                    height="600" style="border:0;" allowfullscreen=true loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                     <div class="max-w-2xl mx-auto">
                         <Button btn_type="button">
-                            <h1 class="text-center text-xl">
+                            <h1 class="text-center text-2xl">
                                 {"Find us on google maps"}
                             </h1>
                         </Button>
                     </div>
                 </div>
-                <div class="flex flex-col">
-                    <Label>
-                    <h1 class="p-8 font-bold text-3xl text-surface-on-light dark:text-surface-on-dark">
-                        {"Can you spot us?"}
-                    </h1>
-                    </Label>
+                <div class="flex flex-col justify-center gap-y-7">
                     <Carousel image_paths={vec![
                         "/images/outside.png".to_string(),
                         "/images/outside1.png".to_string(),
                         "/images/outside2.png".to_string(),
-                    ]}/>
+                    ]} height="h-600"/>
+                    <Label>
+                        <h1 class="font-bold text-3xl text-surface-on-light dark:text-surface-on-dark">
+                            {"Can you spot us?"}
+                        </h1>
+                        </Label>
                 </div>
             </div>
 
+        </div>
+
+        // Our Story Section
+        <div class="w-full bg-surface-light dark:bg-surface-dark">
+            <Label>
+                <h1 class="p-8 pt-0 font-bold text-3xl text-surface-on-light dark:text-surface-on-dark">
+                    {"Our Story"}
+                </h1>
+                </Label>
         </div>
         </>
         }

@@ -19,6 +19,10 @@ module.exports = {
       borderWidth: {
         1: "1px",
       },
+      animation: {
+        eventHeader: "2s ease-in slideIn"
+      },
+      
       colors: {
         // Primary tones
         primary: {
