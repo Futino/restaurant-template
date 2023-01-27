@@ -54,11 +54,11 @@ pub fn Header(props: &Props) -> Html {
                 </div>
             </div>
             // Event header
-                <div class="relative flex bg-primary-container-light ">
+                <div class="relative flex bg-primary-container-light dark:bg-primary-container-dark">
 
                     // Event Message
                     <div class="flex mx-auto transition ease-in-out delay-150 duration-300 hover:scale-110">
-                        <div class="p-6 text-xl leading-6 font-semibold text-primary-container-on-light">
+                        <div class="p-6 text-xl leading-6 font-semibold text-primary-container-on-light dark:text-primary-container-on-dark">
                             <p>
                                 {"Today is Taco Tuesday!!! Choose between crowd favorites Guijillo Roasted Chicken and Fried Clams!"}
                             </p>

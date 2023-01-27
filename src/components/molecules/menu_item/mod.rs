@@ -17,7 +17,7 @@ pub fn MenuItem(props: &Props) -> Html {
     let cost = format!("${:.2}", cost);
     html! {
         <div class="flex flex-col pb-2 w-fit">
-                <img src={img_path.to_owned()} class="object-cover object-center w-110 h-110" alt="Tailwind Play" />
+                <img src={img_path.to_owned()} class="object-cover object-center" alt="Tailwind Play" />
                 <div class="py-2 flex flex-row">
                     <h1 class="ml-auto pr-2 text-xl text-surface-on-light dark:text-surface-on-dark">
                         {name}

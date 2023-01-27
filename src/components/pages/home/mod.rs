@@ -60,8 +60,8 @@ impl Component for Home {
                 </div>
             </div>
 
-            // Burger section
-            <div class=" mx-28 py-5">
+            // Wings & tenders section
+            <div class="mx-28 py-5">
                 <Label>
                     <h1 class="py-6 text-left font-ubuntu text-3xl text-primary-light dark:text-primary-light">
                         {"Wings & Tenders"}
@@ -69,9 +69,19 @@ impl Component for Home {
                 </Label>
                 <div class="grid grid-cols-3 gap-x-5">
                     <MenuItem img_path="/images/tenders.jpg" name="Teriyaki" ingredients="Sweet Japanese sauce with sesame and soy." cost=97.0 />
-                    <MenuItem img_path="/images/wings.jpg" name="Honey Barbeque" ingredients="Sweet, smoky barbeque" cost=97.0 />
+                    <MenuItem img_path="/images/tenders.jpg" name="Honey Barbeque" ingredients="Sweet, smoky barbeque" cost=97.0 />
                     <MenuItem img_path="/images/tenders.jpg" name="Sweet Thai Chili" ingredients="Sweet and mild" cost=97.0 />
                 </div>
+            </div>
+
+            <div class="flex justify-center py-20">
+                <Button btn_type="button">
+                    <Label>
+                        <h1 class="text-3xl font-ubuntu px-10 tracking-wider">
+                            {"FULL MENU"}
+                        </h1>
+                    </Label>
+                </Button>
             </div>
 
         </div>
