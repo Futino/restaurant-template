@@ -17,7 +17,6 @@ impl Component for Home {
     fn view(&self, _ctx: &Context<Self>) -> Html {
         html! {
             <>
-
             // Top section
             <div class="top-0 py-60 px-4 sm:px-6 md:px-8 border-b border-secondary-light/40 dark:border-secondary-dark/40 shadow-2xl bg-[url('/images/burger.jpg')] bg-cover object-contain  bg-center">
                 <div class="relative max-w-6xl mx-auto my-20 space-y-6">
@@ -118,7 +117,7 @@ impl Component for Home {
         <div class="w-full bg-surface-light dark:bg-surface-dark">
             <div class="mx-32 py-36">
                 <div class="grid grid-cols-2 gap-x-10">
-                    <div class="flex flex-col items-center gap-y-10">
+                    <div class="flex flex-col gap-y-10">
                         <Label>
                             <h1 class="p-8 pt-0 font-bold text-8xl text-primary-light">
                                 {"OUR STORY"}
@@ -142,7 +141,7 @@ impl Component for Home {
                        love and honesty— from two locations: Sun Street in Wan Chai and The Mills in Tsuen Wan.
                        "}
                     </h1>
-    
+
                 </div>
             </div>
         </div>
