@@ -54,7 +54,7 @@ impl Component for Home {
                             {"Southside"}
                         </h2>
                     </Label>
-                    <Button options={show_more}/>
+                    <Button option={show_more} />
                     <Label>
                         <h2 class="text-6xl font-ubuntu text-primary-on-light ">
                             {"LANTAU"}
