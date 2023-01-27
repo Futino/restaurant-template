@@ -1,20 +1,44 @@
+use gloo::console::log;
 use yew::prelude::*;
 
 use crate::lorc::generic::atoms::*;
 
 use crate::components::*;
 
-pub struct Home;
+pub enum Msg {
+    ShowMore,
+}
+
+pub struct Home {
+    pretty: bool,
+}
 
 impl Component for Home {
-    type Message = ();
+    type Message = Msg;
     type Properties = ();
 
     fn create(_ctx: &Context<Self>) -> Self {
-        Self
+        Self { pretty: false }
+    }
+
+    fn update(&mut self, ctx: &Context<Self>, msg: Self::Message) -> bool {
+        match msg {
+            Msg::ShowMore => {
+                self.pretty = !self.pretty;
+                log!("Logging show more!")
+            }
+        }
+        true
     }
 
     fn view(&self, _ctx: &Context<Self>) -> Html {
+        let on_show_more = _ctx.link().callback(|_| Msg::ShowMore);
+
+        let show_more = ButtonOptions {
+            onclick: on_show_more,
+            href: None,
+        };
+
         html! {
             <>
             // Top section
@@ -30,6 +54,7 @@ impl Component for Home {
                             {"Southside"}
                         </h2>
                     </Label>
+                    <Button options={show_more}/>
                     <Label>
                         <h2 class="text-6xl font-ubuntu text-primary-on-light ">
                             {"LANTAU"}
@@ -75,13 +100,13 @@ impl Component for Home {
             </div>
 
             <div class="flex justify-center py-20">
-                <Button btn_type="button">
-                    <Label>
-                        <h1 class="text-3xl font-ubuntu px-10 tracking-wider">
-                            {"FULL MENU"}
-                        </h1>
-                    </Label>
-                </Button>
+                // <Button options={ButtonOptions()}>
+                //     <Label>
+                //         <h1 class="text-3xl font-ubuntu px-10 tracking-wider">
+                //             {"FULL MENU"}
+                //         </h1>
+                //     </Label>
+                // </Button>
             </div>
 
         </div>
@@ -100,11 +125,11 @@ impl Component for Home {
                     height="600" style="border:0;" allowfullscreen=true loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                     <div class="max-w-2xl mx-auto">
-                        <Button btn_type="button">
-                            <h1 class="text-center text-2xl">
-                                {"Find us on google maps"}
-                            </h1>
-                        </Button>
+                        // <Button btn_type="button">
+                        //     <h1 class="text-center text-2xl">
+                        //         {"Find us on google maps"}
+                        //     </h1>
+                        // </Button>
                     </div>
                 </div>
                 <div class="flex flex-col justify-center gap-y-7">
