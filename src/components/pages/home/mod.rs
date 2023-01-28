@@ -37,13 +37,18 @@ impl Component for Home {
     }
 
     fn view(&self, _ctx: &Context<Self>) -> Html {
+        let navigator: Navigator = _ctx.link().navigator().unwrap();
+
         let show_more = ButtonOptions {
             onclick: _ctx.link().callback(|_| Msg::ShowMore),
             href: None,
         };
 
         let go_menu = ButtonOptions {
-            onclick: _ctx.link().callback(|_| Msg::ShowMore),
+            onclick: Callback::from(move |_| {
+                navigator.push(&Route::Menu);
+                log!("Navigator to Route: /Menu");
+            }),
             href: Some(String::from("/Menu")),
         };
 
@@ -62,7 +67,7 @@ impl Component for Home {
                             {"Southside"}
                         </h2>
                     </Label>
-                    <Button option={show_more} />
+                    <Button options={show_more} />
                     <Label>
                         <h2 class="text-6xl font-ubuntu text-primary-on-light ">
                             {"LANTAU"}
@@ -109,7 +114,7 @@ impl Component for Home {
 
             <div class="flex justify-center py-20">
             <Link<Route> to={Route::Menu}>
-            <Button option={go_menu}>
+            <Button options={go_menu}>
                     <Label>
                         <h1 class="text-3xl font-ubuntu px-10 tracking-wider">
                             {"FULL MENU"}
