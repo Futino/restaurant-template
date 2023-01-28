@@ -6,43 +6,20 @@ use crate::lorc::generic::atoms::*;
 
 use crate::{components::*, Route};
 
-pub enum Msg {
-    ShowMore,
-    Link,
-}
-
 pub struct Home {
     pretty: bool,
 }
 
 impl Component for Home {
-    type Message = Msg;
+    type Message = ();
     type Properties = ();
 
     fn create(_ctx: &Context<Self>) -> Self {
         Self { pretty: false }
     }
 
-    fn update(&mut self, ctx: &Context<Self>, msg: Self::Message) -> bool {
-        match msg {
-            Msg::ShowMore => {
-                self.pretty = !self.pretty;
-                log!("Showing More!")
-            }
-            Msg::Link => {
-                log!("Linking!")
-            }
-        }
-        true
-    }
-
     fn view(&self, _ctx: &Context<Self>) -> Html {
         let navigator: Navigator = _ctx.link().navigator().unwrap();
-
-        let show_more = ButtonOptions {
-            onclick: _ctx.link().callback(|_| Msg::ShowMore),
-            href: None,
-        };
 
         let go_menu = ButtonOptions {
             onclick: Callback::from(move |_| {
@@ -50,6 +27,12 @@ impl Component for Home {
                 log!("Navigator to Route: /Menu");
             }),
             href: Some(String::from("/Menu")),
+        };
+
+        let navigator: Navigator = _ctx.link().navigator().unwrap(); // Don't know enough rust to make it work without reassiigning... remove this line to see the error.
+        let show_more = ButtonOptions {
+            onclick: Callback::from(move |_| navigator.push(&Route::Menu)),
+            href: None,
         };
 
         html! {
