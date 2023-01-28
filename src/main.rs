@@ -49,7 +49,7 @@ fn switch(routes: Route) -> Html {
 #[function_component(App)]
 fn app() -> Html {
     html! {
-        <BrowserRouter>
+        <BrowserRouter basename="/">
             <Page>
                 <Switch<Route> render={switch}/> // <- must be child of <BrowserRouter>
             </Page>

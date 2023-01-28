@@ -1,12 +1,14 @@
 use gloo::console::log;
 use yew::prelude::*;
+use yew_router::prelude::*;
 
 use crate::lorc::generic::atoms::*;
 
-use crate::components::*;
+use crate::{components::*, Route};
 
 pub enum Msg {
     ShowMore,
+    Link,
 }
 
 pub struct Home {
@@ -25,18 +27,24 @@ impl Component for Home {
         match msg {
             Msg::ShowMore => {
                 self.pretty = !self.pretty;
-                log!("Logging show more!")
+                log!("Showing More!")
+            }
+            Msg::Link => {
+                log!("Linking!")
             }
         }
         true
     }
 
     fn view(&self, _ctx: &Context<Self>) -> Html {
-        let on_show_more = _ctx.link().callback(|_| Msg::ShowMore);
-
         let show_more = ButtonOptions {
-            onclick: on_show_more,
+            onclick: _ctx.link().callback(|_| Msg::ShowMore),
             href: None,
+        };
+
+        let go_menu = ButtonOptions {
+            onclick: _ctx.link().callback(|_| Msg::ShowMore),
+            href: Some(String::from("/Menu")),
         };
 
         html! {
@@ -100,13 +108,16 @@ impl Component for Home {
             </div>
 
             <div class="flex justify-center py-20">
-                // <Button options={ButtonOptions()}>
-                //     <Label>
-                //         <h1 class="text-3xl font-ubuntu px-10 tracking-wider">
-                //             {"FULL MENU"}
-                //         </h1>
-                //     </Label>
-                // </Button>
+            <Link<Route> to={Route::Menu}>
+            <Button option={go_menu}>
+                    <Label>
+                        <h1 class="text-3xl font-ubuntu px-10 tracking-wider">
+                            {"FULL MENU"}
+                        </h1>
+                   </Label>
+                </Button>
+            </Link<Route>>
+
             </div>
 
         </div>
