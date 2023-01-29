@@ -1,3 +1,5 @@
+use std::collections::HashMap;
+
 use gloo::console::log;
 use yew::prelude::*;
 use yew_router::prelude::*;
@@ -21,20 +23,10 @@ impl Component for Home {
     fn view(&self, _ctx: &Context<Self>) -> Html {
         let navigator: Navigator = _ctx.link().navigator().unwrap();
 
-        let go_menu = ButtonOptions {
-            onclick: Callback::from(move |_| {
-                navigator.push(&Route::Menu);
-                log!("Navigator to Route: /Menu");
-            }),
-            href: Some(String::from("/Menu")),
-        };
+        let go_menu = ButtonOptions::route_button(navigator, RouteType::Route(Route::Menu));
 
         let navigator: Navigator = _ctx.link().navigator().unwrap(); // Don't know enough rust to make it work without reassiigning... remove this line to see the error.
-        let show_more = ButtonOptions {
-            onclick: Callback::from(move |_| navigator.push(&Route::Menu)),
-            href: None,
-        };
-
+        let go_maps = ButtonOptions::route_button(navigator, RouteType::Route(Route::Menu));
         html! {
             <>
             // Top section
@@ -45,12 +37,12 @@ impl Component for Home {
                             {"AMERICAN SOUL FOOD"}
                         </h2>
                     </Label>
+
                     <Label>
                         <h2 class="text-9xl tracking-wider font-bilbo text-primary-on-light dark:text-primary-on-dark border-y border-primary-on-light dark:border-primary-on-dark max-w-fit mx-auto">
                             {"Southside"}
                         </h2>
                     </Label>
-                    <Button options={show_more} />
                     <Label>
                         <h2 class="text-6xl font-ubuntu text-primary-on-light ">
                             {"LANTAU"}
@@ -124,11 +116,11 @@ impl Component for Home {
                     height="600" style="border:0;" allowfullscreen=true loading="lazy" referrerpolicy="no-referrer-when-downgrade">
                     </iframe>
                     <div class="max-w-2xl mx-auto">
-                        // <Button btn_type="button">
-                        //     <h1 class="text-center text-2xl">
-                        //         {"Find us on google maps"}
-                        //     </h1>
-                        // </Button>
+                    <Button options={go_maps}>
+                            <h1 class="text-center text-2xl">
+                                {"Find us on google maps"}
+                            </h1>
+                        </Button>
                     </div>
                 </div>
                 <div class="flex flex-col justify-center gap-y-7">
