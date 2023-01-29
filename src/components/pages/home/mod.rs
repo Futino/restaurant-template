@@ -4,7 +4,7 @@ use gloo::console::log;
 use yew::prelude::*;
 use yew_router::prelude::*;
 
-use crate::lorc::generic::atoms::*;
+use crate::lorc::generic::*;
 
 use crate::{components::*, Route};
 
