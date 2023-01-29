@@ -26,7 +26,10 @@ impl Component for Home {
         let go_menu = ButtonOptions::route_button(navigator, RouteType::Route(Route::Menu));
 
         let navigator: Navigator = _ctx.link().navigator().unwrap(); // Don't know enough rust to make it work without reassiigning... remove this line to see the error.
-        let go_maps = ButtonOptions::route_button(navigator, RouteType::Route(Route::Menu));
+        let go_maps = ButtonOptions::route_button(
+            navigator,
+            RouteType::External("https://goo.gl/maps/S8Xvs9HMvtUA9tGcA".to_string()),
+        );
         html! {
             <>
             // Top section
