@@ -9,7 +9,7 @@ use props::Props;
 pub fn Header(props: &Props) -> Html {
     html! {
         <div class="fixed z-40 top-0 w-full backdrop-blur flex-none ">
-            <div class="absolute z-10 py-4 border-b border-secondary-light/10 mx-auto justify-items-center bg-surface-light/5">
+            <div class="z-10 py-4 border-b border-secondary-light/10 mx-auto justify-items-center bg-surface-light/5">
                 // Top Header
                 <div class="px-auto xl:px-40 lg:px-20 md:px-10 md:px-auto relative flex items-center">
 
@@ -54,7 +54,7 @@ pub fn Header(props: &Props) -> Html {
                 </div>
             </div>
             // Event header
-                <div class="-z-10 absolute animate-slideDown flex bg-primary-container-light dark:bg-primary-container-dark">
+                <div class="-z-10 animate-slideDown delay-[2000] opacity-0 flex bg-primary-container-light dark:bg-primary-container-dark">
 
                     // Event Message
                     <div class="flex mx-auto transition ease-in-out delay-150 duration-300 hover:scale-105">

@@ -33,7 +33,7 @@ impl Component for Home {
         html! {
             <>
             // Top section
-            <div class="top-0 py-60 px-4 sm:px-6 md:px-8 border-b border-secondary-light/40 dark:border-secondary-dark/40 shadow-2xl bg-[url('/images/burger.jpg')] bg-cover object-contain  bg-center">
+            <div class="top-0 py-60 px-4 sm:px-6 md:px-8 border-b border-secondary-light/40 dark:border-secondary-dark/40 shadow-2xl bg-[url('/images/burger.jpg')] bg-fixed bg-cover object-contain  bg-center">
                 <div class="relative max-w-6xl mx-auto my-20 space-y-6">
                     <Label>
                         <h2 class="text-2xl text-primary-light ">
